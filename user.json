@@ -1,0 +1,31 @@
+[{
+    "id": 1,
+    "nama": "Alfian",
+    "kelamin": "Laki-Laki",
+    "tempat": "Pati",
+    "tanggal_lahir": "28-01-1998",
+    "alamat": "Pati, Jawa Tengah"
+},{
+    "id": 2,
+    "nama": "Uli",
+    "kelamin": "Perempuan",
+    "tempat": "Jogja",
+    "tanggal_lahir": "01-01-0001",
+    "alamat": "Jogjakarta"
+},{
+    "id": 3,
+    "nama": "Ali",
+    "kelamin": "Laki-Laki",
+    "tempat": "Semarang",
+    "tanggal_lahir": "02-01-0001",
+    "alamat": "Semarang"
+},{
+    "id": 4,
+    "nama": "Tono",
+    "kelamin": "Laki-Laki",
+    "tempat": "Cilacap",
+    "tanggal_lahir": "02-03-0001",
+    "alamat": "Cilacap"
+}
+
+]
