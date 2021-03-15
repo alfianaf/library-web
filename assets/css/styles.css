@@ -1,0 +1,24 @@
+.headline-book a {
+    text-decoration: none;
+    color: black;
+}
+
+.catalogue-book {
+    height: 400px;
+}
+
+.catalogue-img {
+    height: 200px;
+    width: fit-content;
+    object-fit: cover;
+}
+
+.catalogue-book p {
+    line-height: 10px;
+}
+
+.catalogue-img-modal {
+    height: 200px;
+    max-width: 200px;
+    object-fit: cover;
+}

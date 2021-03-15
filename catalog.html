@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Catalog</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+
+<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="index2.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Catalogue</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Rent</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Payment</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="#" class="nav-link">Donation</a>
+                </li>
+            </ul>
+
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-3">
+                <div class="input-group input-group-sm">
+                    <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                    <div class="input-group-append">
+                        <button class="btn btn-navbar" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Right navbar links -->
+            <ul class="navbar-nav ml-auto">
+                <!-- Messages Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-comments"></i>
+                        <span class="badge badge-danger navbar-badge">3</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Brad Diesel
+                                        <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">Call me whenever you can...</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        John Pierce
+                                        <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">I got your message bro</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <!-- Message Start -->
+                            <div class="media">
+                                <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+                                <div class="media-body">
+                                    <h3 class="dropdown-item-title">
+                                        Nora Silvester
+                                        <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                                    </h3>
+                                    <p class="text-sm">The subject goes here</p>
+                                    <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+                                </div>
+                            </div>
+                            <!-- Message End -->
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+                    </div>
+                </li>
+                <!-- Notifications Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link" data-toggle="dropdown" href="#">
+                        <i class="far fa-bell"></i>
+                        <span class="badge badge-warning navbar-badge">15</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+                        <span class="dropdown-item dropdown-header">15 Notifications</span>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-envelope mr-2"></i> 4 new messages
+                            <span class="float-right text-muted text-sm">3 mins</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-users mr-2"></i> 8 friend requests
+                            <span class="float-right text-muted text-sm">12 hours</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">
+                            <i class="fas fa-file mr-2"></i> 3 new reports
+                            <span class="float-right text-muted text-sm">2 days</span>
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+                    </div>
+                </li>
+                <!-- Log Out Button -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.navbar -->
+
+        <!-- Main Sidebar Container -->
+        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+            <!-- Brand Logo -->
+            <a href="index3.html" class="brand-link">
+                <!-- <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
+                <i class="fas fa-book"></i>
+                <span class="brand-text font-weight-light">  E-Library</span>
+            </a>
+
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                    <div class="image">
+                        <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+                    </div>
+                    <div class="info">
+                        <a href="#" class="d-block">Alexander Pierce</a>
+                    </div>
+                </div>
+
+                <!-- Sidebar Menu -->
+                <nav class="mt-2">
+                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+                        <li class="nav-header">DASHBOARD</li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <p>Dashboard</p>
+                            </a>
+                        </li>
+                        <li class="nav-header">CATALOGUE</li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-swatchbook"></i>
+                                <p>Catalogue</p>
+                            </a>
+                        </li>
+                        <li class="nav-header">RENT</li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-book-open"></i>
+                                <p>Rent Book</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-archive"></i>
+                                <p>Return Book</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-exclamation-circle"></i>
+                                <p>Fine</p>
+                            </a>
+                        </li>
+                        <li class="nav-header">PAYMENT</li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-money-bill-wave"></i>
+                                <p>Top Up</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-money-check-alt"></i>
+                                <p>Payment</p>
+                            </a>
+                        </li>
+                        <li class="nav-header">Donation</li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-donate"></i>
+                                <p>Donation</p>
+                            </a>
+                        </li>
+                        <li class="nav-header">LOGOUT</li>
+                        <li class="nav-item">
+                            <a href="pages/calendar.html" class="nav-link">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /.sidebar-menu -->
+            </div>
+            <!-- /.sidebar -->
+        </aside>
+
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <br>
+            <!-- Main content -->
+            <section class="content mt-4">
+                <!-- Headline book -->
+                <div class="container mt-4">
+                    <h3>Headlines</h3>
+                    <hr>
+                    <div class="row headline-book ">
+                        <div class="col-12 col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">Popular Books</h3>
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                            <i class="fas fa-minus"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <ul class="products-list product-list-in-card pl-2 pr-2">
+                                        <li class="item">
+                                            <div class="product-img">
+                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                <span class="font-weight-light badge badge-success float-right">2</span></a>
+                                                <span class="font-weight-lighter product-description">Novel | Romance</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="product-img">
+                                                <img src="./assets/images/three-book-covers-mockup_125540-457.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                <span class="font-weight-light badge badge-warning float-right">1</span></a>
+                                                <span class="font-weight-lighter product-description">Novel | Romance</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="product-img">
+                                                <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                <span class="font-weight-light badge badge-danger float-right">0</span></a>
+                                                <span class="font-weight-lighter product-description">Komik | Action</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer text-center">
+                                    <a href="javascript:void(0)" class="uppercase">View All Popular Books</a>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3 class="card-title">New Books</h3>
+                                    <div class="card-tools">
+                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                      <i class="fas fa-minus"></i>
+                                    </button>
+                                    </div>
+                                </div>
+                                <!-- /.card-header -->
+                                <div class="card-body p-0">
+                                    <ul class="products-list product-list-in-card pl-2 pr-2">
+                                        <li class="item">
+                                            <div class="product-img">
+                                                <img src="./assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                <span class="font-weight-light badge badge-success float-right">5</span></a>
+                                                <span class="font-weight-lighter product-description">Komik | Romance</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="product-img">
+                                                <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                <span class="font-weight-light badge badge-success float-right">2</span></a>
+                                                <span class="font-weight-lighter product-description">Novel | Comedy</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="product-img">
+                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                            </div>
+                                            <div class="product-info">
+                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                <span class="font-weight-light badge badge-success float-right">3</span></a>
+                                                <span class="font-weight-lighter product-description">Komik | Comedy</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- /.card-body -->
+                                <div class="card-footer text-center">
+                                    <a href="javascript:void(0)" class="uppercase">View All New Books</a>
+                                </div>
+                                <!-- /.card-footer -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Catalogue-book -->
+                <div class="container">
+                    <h3>Catalogue</h3>
+                    <hr>
+                    <div class="row">
+                        <div class="col-12 col-sm-5">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="filter-category"><i class="fas fa-th"></i></label>
+                                </div>
+                                <select class="custom-select" id="filter-category">
+                                  <option selected>All Categories</option>
+                                  <option value="1">Encyclopedia</option>
+                                  <option value="2">Comic</option>
+                                  <option value="3">Novel</option>
+                                  <option value="4">Magazine</option>
+                                  <option value="5">Journal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="filter-category"><i class="fas fa-th"></i></label>
+                                </div>
+                                <select class="custom-select" id="filter-category">
+                                  <option selected>All Genre</option>
+                                  <option value="1">Comedy</option>
+                                  <option value="2">Science</option>
+                                  <option value="3">Romance</option>
+                                  <option value="4">Horror</option>
+                                  <option value="4">History</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-2">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <label class="input-group-text" for="filter-category"><i class="fas fa-sort-amount-up"></i></label>
+                                </div>
+                                <select class="custom-select" id="filter-category">
+                                  <option selected>Default</option>
+                                  <option value="1">A-Z</option>
+                                  <option value="2">Z-A</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <a type="button" data-toggle="modal" data-target="#exampleModal">
+                                    <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                </a>
+                                <div class="card-body ">
+                                    <a type="button" data-toggle="modal" data-target="#exampleModal">
+                                        <h5>Lorem Ipsum</h5>
+                                        <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                        <p class="text-success ">Available: 2</p>
+                                        <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    </a>
+
+                                    <div class="text-right ">
+                                        <button type="button" class="btn btn-sm btn-danger" onclick="rentTheBook()"><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-4 text-center">
+                                                    <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="" class="catalogue-img-modal">
+                                                </div>
+                                                <div class="col-12 col-sm-8 mt-3">
+                                                    <h3>Lorem Ipsum</h3>
+                                                    <p class="text-secondary font-italic">Category | Genre</p>
+                                                    <hr>
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-8">
+                                                            <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                            <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                            <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                            <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                        </div>
+                                                        <div class="col-12 col-md-4">
+                                                            <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                            <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                            <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 mt-4 mb-3">
+                                                    <h5><b>Sinopsis:</b> </h5>
+                                                    <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus in ornare quam
+                                                        viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim facilisis gravida neque
+                                                        convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci eu lobortis. Magna fringilla urna porttitor
+                                                        rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna. Neque ornare aenean euismod elementum. Senectus et
+                                                        netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                    <p class="text-justify" style="line-height: normal;">
+                                                        A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                        elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus. Gravida
+                                                        quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus nec feugiat in. Feugiat
+                                                        nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam ut venenatis tellus in metus vulputate.
+                                                        Dui faucibus in ornare quam viverra.</p>
+                                                </div>
+                                            </div>
+                                            <div class="text-right">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-danger"><i class="fas fa-plus"></i> Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
+                                    <p class="text-secondary">Available: 0</p>
+                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
+                                    <p class="text-success ">Available: 2</p>
+                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
+                                    <p class="text-success">Available: 1</p>
+                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Komik | Action</p>
+                                    <p class="text-success ">Available: 5</p>
+                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                    <p class="text-success ">Available: 2</p>
+                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
+                                    <p class="text-secondary">Available: 0</p>
+                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
+                                    <p class="text-success ">Available: 2</p>
+                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
+                                    <p class="text-success">Available: 1</p>
+                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Komik | Action</p>
+                                    <p class="text-success ">Available: 5</p>
+                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                    <p class="text-success ">Available: 2</p>
+                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
+                                    <p class="text-secondary">Available: 0</p>
+                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
+                                    <p class="text-success ">Available: 2</p>
+                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
+                                    <p class="text-success">Available: 1</p>
+                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Komik | Action</p>
+                                    <p class="text-success ">Available: 5</p>
+                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                    <p class="text-success ">Available: 2</p>
+                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
+                                    <p class="text-secondary">Available: 0</p>
+                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
+                                    <p class="text-success ">Available: 2</p>
+                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card">
+                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
+                                <div class="card-body">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
+                                    <p class="text-success">Available: 1</p>
+                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
+                                    <div class="text-right">
+                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-3 catalogue-book">
+                            <div class="card ">
+                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
+                                <div class="card-body ">
+                                    <h5>Lorem Ipsum</h5>
+                                    <p class="font-weight-light font-italic ">Komik | Action</p>
+                                    <p class="text-success ">Available: 5</p>
+                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
+                                    <div class="text-right ">
+                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Control Sidebar -->
+        <aside class=" control-sidebar control-sidebar-dark ">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer text-center ">
+            <strong>Copyright 2021 <a href="http://adminlte.io ">KreatsiTech</a>.</strong> All rights reserved.
+        </footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js "></script>
+    <!-- Bootstrap -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <!-- overlayScrollbars -->
+    <script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js "></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.js "></script>
+
+    <!-- OPTIONAL SCRIPTS -->
+    <script src="dist/js/demo.js "></script>
+
+    <!-- PAGE PLUGINS -->
+    <!-- jQuery Mapael -->
+    <script src="plugins/jquery-mousewheel/jquery.mousewheel.js "></script>
+    <script src="plugins/raphael/raphael.min.js "></script>
+    <script src="plugins/jquery-mapael/jquery.mapael.min.js "></script>
+    <script src="plugins/jquery-mapael/maps/usa_states.min.js "></script>
+    <!-- ChartJS -->
+    <script src="plugins/chart.js/Chart.min.js "></script>
+
+    <!-- PAGE SCRIPTS -->
+    <script src="dist/js/pages/dashboard2.js "></script>
+
+    <!-- SWEETALERT2 -->
+    <script src="./plugins/sweetalert2/sweetalert2.all.min.js"></script>
+
+    <!-- MyScript -->
+    <script src="./assets/js/catalogue.js"></script>
+</body>
+
+</html>
