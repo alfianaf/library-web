@@ -251,510 +251,1209 @@
         <div class="content-wrapper">
             <br>
             <!-- Main content -->
-            <section class="content mt-4">
-                <!-- Headline book -->
-                <div class="container mt-4">
-                    <h3>Headlines</h3>
-                    <hr>
-                    <div class="row headline-book ">
-                        <div class="col-12 col-sm-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">Popular Books</h3>
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                            <i class="fas fa-minus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body p-0">
-                                    <ul class="products-list product-list-in-card pl-2 pr-2">
-                                        <li class="item">
-                                            <div class="product-img">
-                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
-                                            </div>
-                                            <div class="product-info">
-                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
-                                                <span class="font-weight-light badge badge-success float-right">2</span></a>
-                                                <span class="font-weight-lighter product-description">Novel | Romance</span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="product-img">
-                                                <img src="./assets/images/three-book-covers-mockup_125540-457.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
-                                            </div>
-                                            <div class="product-info">
-                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
-                                                <span class="font-weight-light badge badge-warning float-right">1</span></a>
-                                                <span class="font-weight-lighter product-description">Novel | Romance</span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="product-img">
-                                                <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
-                                            </div>
-                                            <div class="product-info">
-                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
-                                                <span class="font-weight-light badge badge-danger float-right">0</span></a>
-                                                <span class="font-weight-lighter product-description">Komik | Action</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer text-center">
-                                    <a href="javascript:void(0)" class="uppercase">View All Popular Books</a>
-                                </div>
-                                <!-- /.card-footer -->
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                            <div class="card">
-                                <div class="card-header">
-                                    <h3 class="card-title">New Books</h3>
-                                    <div class="card-tools">
-                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                                      <i class="fas fa-minus"></i>
-                                    </button>
-                                    </div>
-                                </div>
-                                <!-- /.card-header -->
-                                <div class="card-body p-0">
-                                    <ul class="products-list product-list-in-card pl-2 pr-2">
-                                        <li class="item">
-                                            <div class="product-img">
-                                                <img src="./assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
-                                            </div>
-                                            <div class="product-info">
-                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
-                                                <span class="font-weight-light badge badge-success float-right">5</span></a>
-                                                <span class="font-weight-lighter product-description">Komik | Romance</span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="product-img">
-                                                <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
-                                            </div>
-                                            <div class="product-info">
-                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
-                                                <span class="font-weight-light badge badge-success float-right">2</span></a>
-                                                <span class="font-weight-lighter product-description">Novel | Comedy</span>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="product-img">
-                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
-                                            </div>
-                                            <div class="product-info">
-                                                <a href="javascript:void(0)" class="product-title">Lorem Ipsum
-                                                <span class="font-weight-light badge badge-success float-right">3</span></a>
-                                                <span class="font-weight-lighter product-description">Komik | Comedy</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <!-- /.card-body -->
-                                <div class="card-footer text-center">
-                                    <a href="javascript:void(0)" class="uppercase">View All New Books</a>
-                                </div>
-                                <!-- /.card-footer -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <!-- Catalogue-book -->
+            <section class="content">
                 <div class="container">
-                    <h3>Catalogue</h3>
-                    <hr>
                     <div class="row">
-                        <div class="col-12 col-sm-5">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="filter-category"><i class="fas fa-th"></i></label>
-                                </div>
-                                <select class="custom-select" id="filter-category">
-                                  <option selected>All Categories</option>
-                                  <option value="1">Encyclopedia</option>
-                                  <option value="2">Comic</option>
-                                  <option value="3">Novel</option>
-                                  <option value="4">Magazine</option>
-                                  <option value="5">Journal</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-5">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="filter-category"><i class="fas fa-th"></i></label>
-                                </div>
-                                <select class="custom-select" id="filter-category">
-                                  <option selected>All Genre</option>
-                                  <option value="1">Comedy</option>
-                                  <option value="2">Science</option>
-                                  <option value="3">Romance</option>
-                                  <option value="4">Horror</option>
-                                  <option value="4">History</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-2">
-                            <div class="input-group mb-3">
-                                <div class="input-group-prepend">
-                                    <label class="input-group-text" for="filter-category"><i class="fas fa-sort-amount-up"></i></label>
-                                </div>
-                                <select class="custom-select" id="filter-category">
-                                  <option selected>Default</option>
-                                  <option value="1">A-Z</option>
-                                  <option value="2">Z-A</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <a type="button" data-toggle="modal" data-target="#exampleModal">
-                                    <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
-                                </a>
-                                <div class="card-body ">
-                                    <a type="button" data-toggle="modal" data-target="#exampleModal">
-                                        <h5>Lorem Ipsum</h5>
-                                        <p class="font-weight-light font-italic ">Novel | Romance</p>
-                                        <p class="text-success ">Available: 2</p>
-                                        <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    </a>
+                        <div class="col-12 col-md-8">
+                            <div class="container mt-3">
+                                <h3>Catalogue</h3>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-12 col-sm-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="filter-category"><i class="fas fa-th"></i></label>
+                                            </div>
+                                            <select class="custom-select" id="filter-category">
+                                              <option selected>All Categories</option>
+                                              <option value="1">Encyclopedia</option>
+                                              <option value="2">Comic</option>
+                                              <option value="3">Novel</option>
+                                              <option value="4">Magazine</option>
+                                              <option value="5">Journal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="filter-category"><i class="fas fa-th"></i></label>
+                                            </div>
+                                            <select class="custom-select" id="filter-category">
+                                              <option selected>All Genre</option>
+                                              <option value="1">Comedy</option>
+                                              <option value="2">Science</option>
+                                              <option value="3">Romance</option>
+                                              <option value="4">Horror</option>
+                                              <option value="4">History</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <label class="input-group-text" for="filter-category"><i class="fas fa-sort-amount-up"></i></label>
+                                            </div>
+                                            <select class="custom-select" id="filter-category">
+                                              <option selected>Default</option>
+                                              <option value="1">A-Z</option>
+                                              <option value="2">Z-A</option>
+                                              <option value="3">Terbaru</option>
+                                              <option value="4">Terpopular</option>
+                                              <option value="5">Termurah</option>
+                                              <option value="6">Termahal</option>
 
-                                    <div class="text-right ">
-                                        <button type="button" class="btn btn-sm btn-danger" onclick="rentTheBook()"><i class="fas fa-plus "></i>  Add</button>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-body">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                            <div class="row">
-                                                <div class="col-12 col-sm-4 text-center">
-                                                    <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="" class="catalogue-img-modal">
+                                <div class="row">
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
                                                 </div>
-                                                <div class="col-12 col-sm-8 mt-3">
-                                                    <h3>Lorem Ipsum</h3>
-                                                    <p class="text-secondary font-italic">Category | Genre</p>
-                                                    <hr>
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-8">
-                                                            <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
-                                                            <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
-                                                            <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
-                                                            <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
-                                                        <div class="col-12 col-md-4">
-                                                            <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
-                                                            <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
-                                                            <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-                                            <div class="row">
-                                                <div class="col-12 mt-4 mb-3">
-                                                    <h5><b>Sinopsis:</b> </h5>
-                                                    <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus in ornare quam
-                                                        viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim facilisis gravida neque
-                                                        convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci eu lobortis. Magna fringilla urna porttitor
-                                                        rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna. Neque ornare aenean euismod elementum. Senectus et
-                                                        netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
-                                                    <p class="text-justify" style="line-height: normal;">
-                                                        A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
-                                                        elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus. Gravida
-                                                        quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus nec feugiat in. Feugiat
-                                                        nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam ut venenatis tellus in metus vulputate.
-                                                        Dui faucibus in ornare quam viverra.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
                                                 </div>
                                             </div>
-                                            <div class="text-right">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-danger"><i class="fas fa-plus"></i> Add</button>
+                                        </div>
+                                        <div class="modal fade" id="book-detail2" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-mockup_110893-2041.jpg " alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg" alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail3" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/three-book-covers-mockup_125540-457.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail2" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-mockup_110893-2041.jpg " alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg" alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail3" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/three-book-covers-mockup_125540-457.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail2" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-mockup_110893-2041.jpg " alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg" alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail3" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/three-book-covers-mockup_125540-457.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail2">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail2" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/book-mockup_110893-2041.jpg " alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 col-md-4 catalogue-book">
+                                        <div class="card ">
+                                            <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg" alt=" " class="card-img-top catalogue-img ">
+                                            </a>
+                                            <div class="card-body ">
+                                                <a type="button" data-toggle="modal" data-target="#book-detail3">
+                                                    <h5>Lorem Ipsum</h5>
+                                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
+                                                    <p class="text-success ">Available: 2</p>
+                                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
+                                                </a>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="text-right ">
+                                                    <button type="button" class="btn btn-sm btn-primary"><i class="fas fa-plus "></i>  Add</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="book-detail3" tabindex="-1" role="dialog" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-body">
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-4 mt-3">
+                                                                <img src="./assets/images/three-book-covers-mockup_125540-457.jpg" alt="" class="catalogue-img-modal">
+                                                            </div>
+                                                            <div class="col-12 col-sm-8 mt-3">
+                                                                <h3>Lorem Ipsum</h3>
+                                                                <p class="text-secondary font-italic">Category | Genre</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-12 col-md-8">
+                                                                        <p> <i class="fas fa-user fa-sm"></i> Nama Penulis</p>
+                                                                        <p> <i class="fas fa-calendar-alt fa-sm"></i> 2000, Edisi I Vol I</p>
+                                                                        <p> <i class="fas fa-building fa-sm"></i> Penerbit, Kota, Negara</p>
+                                                                        <p> <i class="fas fa-barcode fa-sm"></i> ISBN </p>
+                                                                    </div>
+                                                                    <div class="col-12 col-md-4">
+                                                                        <p> <i class="fas fa-language fa-sm"></i> Bahasa </p>
+                                                                        <p> <i class="fas fa-book-open fa-sm"></i> Available: 2 </p>
+                                                                        <p> <i class="fas fa-coins fa-sm"></i> Rp 3.000,-/hari </p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 mt-4 mb-3">
+                                                                <h5><b>Deskripsi:</b> </h5>
+                                                                <p class="text-justify" style="line-height: normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. A iaculis at erat pellentesque adipiscing commodo. Dui faucibus
+                                                                    in ornare quam viverra orci sagittis. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Viverra justo nec ultrices dui sapien eget mi proin sed. Aliquet bibendum enim
+                                                                    facilisis gravida neque convallis a cras semper. Orci ac auctor augue mauris augue. Ut morbi tincidunt augue interdum velit euismod in. Est sit amet facilisis magna etiam tempor orci
+                                                                    eu lobortis. Magna fringilla urna porttitor rhoncus dolor purus non. Sem integer vitae justo eget magna fermentum iaculis eu. Diam sollicitudin tempor id eu. Enim sit amet venenatis urna.
+                                                                    Neque ornare aenean euismod elementum. Senectus et netus et malesuada fames. Pharetra massa massa ultricies mi quis hendrerit. Sem viverra aliquet eget sit amet tellus cras.</p>
+                                                                <p class="text-justify" style="line-height: normal;">
+                                                                    A scelerisque purus semper eget duis at tellus at. Egestas congue quisque egestas diam in arcu cursus euismod quis. Mi proin sed libero enim sed faucibus turpis in eu. Magna etiam tempor orci eu. Consectetur lorem donec massa sapien faucibus et. Pellentesque
+                                                                    elit eget gravida cum. Pellentesque adipiscing commodo elit at imperdiet dui. Egestas erat imperdiet sed euismod nisi porta lorem. Aliquam ut porttitor leo a. Semper eget duis at tellus.
+                                                                    Gravida quis blandit turpis cursus in hac habitasse platea dictumst. Arcu felis bibendum ut tristique et egestas quis ipsum. Urna nunc id cursus metus. Donec adipiscing tristique risus
+                                                                    nec feugiat in. Feugiat nisl pretium fusce id velit ut tortor pretium. Purus semper eget duis at tellus at. At augue eget arcu dictum varius duis at. Leo integer malesuada nunc vel. Diam
+                                                                    ut venenatis tellus in metus vulputate. Dui faucibus in ornare quam viverra.</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="text-right">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary"><i class="fas fa-plus"></i> Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
-                                    <p class="text-secondary">Available: 0</p>
-                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
+                        <div class="col-12 col-md-4">
+                            <div class="container mt-3">
+                                <h3>Headlines</h3>
+                                <hr>
+                                <div class="row headline-book ">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Popular Books</h3>
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                        <i class="fas fa-minus"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body p-0">
+                                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">2</span></a>
+                                                            <span class="font-weight-lighter product-description">Novel | Romance</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/three-book-covers-mockup_125540-457.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-warning float-right">1</span></a>
+                                                            <span class="font-weight-lighter product-description">Novel | Romance</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-danger float-right">0</span></a>
+                                                            <span class="font-weight-lighter product-description">Komik | Action</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.card-body -->
+                                            <div class="card-footer text-center">
+                                                <a href="javascript:void(0)" class="uppercase">View All Popular Books</a>
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">New Books</h3>
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                  <i class="fas fa-minus"></i>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <!-- /.card-header -->
+                                            <div class="card-body p-0">
+                                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">5</span></a>
+                                                            <span class="font-weight-lighter product-description">Komik | Romance</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">2</span></a>
+                                                            <span class="font-weight-lighter product-description">Novel | Comedy</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">3</span></a>
+                                                            <span class="font-weight-lighter product-description">Komik | Comedy</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <!-- /.card-body -->
+                                            <div class="card-footer text-center">
+                                                <a href="javascript:void(0)" class="uppercase">View All New Books</a>
+                                            </div>
+                                            <!-- /.card-footer -->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
-                                    <p class="text-success ">Available: 2</p>
-                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                <h4 class="mt-3">Information</h4>
+                                <hr>
+                                <div class="row information-book">
+                                    <!-- Cart -->
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Cart</h3>
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                  <i class="fas fa-minus"></i>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">5</span></a>
+                                                            <span class="font-weight-lighter product-description">Komik | Romance</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">2</span></a>
+                                                            <span class="font-weight-lighter product-description">Novel | Comedy</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">3</span></a>
+                                                            <span class="font-weight-lighter product-description">Komik | Comedy</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <a href="javascript:void(0)" class="uppercase">Rent Now</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
-                                    <p class="text-success">Available: 1</p>
-                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
+                                    <!-- being rented -->
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Being Rented</h3>
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                  <i class="fas fa-minus"></i>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <ul class="products-list product-list-in-card pl-2 pr-2">
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-danger float-right">Expired</span></a>
+                                                            <span class="font-weight-lighter product-description">Komik | Romance</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-mockup_110893-2041.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-danger float-right">Expired</span></a>
+                                                            <span class="font-weight-lighter product-description">Novel | Comedy</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item">
+                                                        <div class="product-img">
+                                                            <img src="./assets/images/book-cover-mockup_125540-572.jpg" alt="Product Image" class="img-size-50" style="object-fit: cover;">
+                                                        </div>
+                                                        <div class="product-info">
+                                                            <a href="javascript:void(0)" class="product-title">Lorem Ipsum
+                                                            <span class="font-weight-light badge badge-success float-right">dd-mm-yyyy</span></a>
+                                                            <span class="font-weight-lighter product-description">Komik | Comedy</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <a href="javascript:void(0)" class="uppercase">Return Now</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Komik | Action</p>
-                                    <p class="text-success ">Available: 5</p>
-                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
-                                    <p class="text-success ">Available: 2</p>
-                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
-                                    <p class="text-secondary">Available: 0</p>
-                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
-                                    <p class="text-success ">Available: 2</p>
-                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
-                                    <p class="text-success">Available: 1</p>
-                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Komik | Action</p>
-                                    <p class="text-success ">Available: 5</p>
-                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
-                                    <p class="text-success ">Available: 2</p>
-                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
-                                    <p class="text-secondary">Available: 0</p>
-                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
-                                    <p class="text-success ">Available: 2</p>
-                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
-                                    <p class="text-success">Available: 1</p>
-                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Komik | Action</p>
-                                    <p class="text-success ">Available: 5</p>
-                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/book-cover-mockup_125540-572.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Novel | Romance</p>
-                                    <p class="text-success ">Available: 2</p>
-                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-mockup-isolated-soft-color-background_78895-1964.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Novel | Comedy</p>
-                                    <p class="text-secondary">Available: 0</p>
-                                    <p class="font-weight-bold">Rp 3.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger" disabled><i class="fas fa-plus"></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/book-mockup_110893-2041.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Novel | Horror</p>
-                                    <p class="text-success ">Available: 2</p>
-                                    <p class="font-weight-bold ">Rp 3.000,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card">
-                                <img src="/assets/images/book-shelf-with-stack-no-cover-books.jpg" alt="" class="card-img-top catalogue-img">
-                                <div class="card-body">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic">Encyclopedia | Science</p>
-                                    <p class="text-success">Available: 1</p>
-                                    <p class="font-weight-bold">Rp 5.000,-/day</p>
-                                    <div class="text-right">
-                                        <button type="button" class="btn btn-sm btn-danger"><i class="fas fa-plus"></i>  Add</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md-3 catalogue-book">
-                            <div class="card ">
-                                <img src="/assets/images/three-book-covers-mockup_125540-457.jpg " alt=" " class="card-img-top catalogue-img ">
-                                <div class="card-body ">
-                                    <h5>Lorem Ipsum</h5>
-                                    <p class="font-weight-light font-italic ">Komik | Action</p>
-                                    <p class="text-success ">Available: 5</p>
-                                    <p class="font-weight-bold ">Rp 2.500,-/day</p>
-                                    <div class="text-right ">
-                                        <button type="button " class="btn btn-sm btn-danger "><i class="fas fa-plus "></i>  Add</button>
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h3 class="card-title">Fine</h3>
+                                                <div class="card-tools">
+                                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                  <i class="fas fa-minus"></i>
+                                                </button>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-0">
+                                                <div class="info-box">
+                                                    <span class="info-box-icon bg-danger"><i class="fas fa-money-bill-wave"></i></span>
+                                                    <div class="info-box-content">
+                                                        <span class="info-box-text">4 Books</span>
+                                                        <span class="info-box-number">Rp 10.000,-</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer text-center">
+                                                <a href="javascript:void(0)" class="uppercase">Details</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- Headline book -->
             </section>
             <!-- /.content -->
         </div>
