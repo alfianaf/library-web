@@ -11,7 +11,9 @@ function fetchdata(){
   .catch((err) => console.log(err));
 
 }
-
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 function user(dataUser) {
   let output = "";
 
@@ -22,7 +24,7 @@ function user(dataUser) {
         <td class="text-center">${element.judul}</td>
         <td class="text-center">${element.kategori}</td>
         <td class="text-center">${element.genre}</td>
-        <td class="text-center">${element.harga}</td>
+        <td class="text-center">Rp ${numberWithCommas(element.harga)}</td>
         <td class="text-center">${element.jumlah}</td>
         <td class="text-center">${element.lokasi}</td>
         <td class="text-center">
@@ -42,11 +44,12 @@ function editData(id) {
   fetch("../../dist/js/buku.json")
   .then((response) => response.json())
   .then((json) => {
-    document.getElementById('nama').value=json[id].nama;
-    document.getElementById('kelamin').value=json[id].kelamin;
-    document.getElementById('tempat').value=json[id].tempat;
-    document.getElementById('tanggal_lahir').value=json[id].tanggal_lahir;
-    document.getElementById('alamat').value=json[id].alamat;
+    document.getElementById('judul').value=json[id].judul;
+    document.getElementById('kategori').value=json[id].kategori;
+    document.getElementById('genre').value=json[id].genre;
+    document.getElementById('harga').value=json[id].harga;
+    document.getElementById('jumlah').value=json[id].jumlah;
+    document.getElementById('lokasi').value=json[id].lokasi;
   })
   // handling error
   .catch((err) => console.log(err));
@@ -64,7 +67,7 @@ function deleteData(id){
       })
       .then((willDelete) => {
         if (willDelete) {
-          swal("Success", "Berhasil Menghapus Data "+json[id].nama, "success");
+          swal("Success", "Berhasil Menghapus Data "+json[id].judul, "success");
         }
       });
           
