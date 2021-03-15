@@ -3,8 +3,13 @@
     color: black;
 }
 
-.catalogue-book {
-    height: 400px;
+.information-book a {
+    text-decoration: none;
+    color: black;
+}
+
+.catalogue-book .card-body {
+    height: 150px;
 }
 
 .catalogue-img {
