@@ -9,11 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -29,72 +29,15 @@
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="../../index3.html" class="brand-link">
-        <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+      <a href="index.html" class="brand-link">
+        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
           style="opacity: .8">
         <span class="brand-text font-weight-light">AdminLTE 3</span>
       </a>
 
       <!-- Sidebar -->
-      <div class="sidebar">
-        <!-- Sidebar user (optional) -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-          <div class="image">
-            <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-          </div>
-          <div class="info">
-            <a href="#" class="d-block">Alexander Pierce</a>
-          </div>
-        </div>
-
-        <!-- Sidebar Menu -->
-        <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
-            <li class="nav-header">DASHBOARD</li>
-            <li class="nav-item">
-              <a href="pages/calendar.html" class="nav-link">
-                <i class="nav-icon fas fa-tachometer-alt"></i>
-                <p>Dashboard</p>
-              </a>
-            </li>
-            <li class="nav-header">USER</li>
-            <li class="nav-item">
-              <a href="pages/tables/daftaruser.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Daftar User</p>
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a href="../forms/tambahuser.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Tambah User</p>
-              </a>
-            </li>
-            
-            <li class="nav-header">BUKU</li>
-            <li class="nav-item">
-              <a href="pages/tables/daftarbuku.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Daftar Buku</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../forms/tambahbuku.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Tambah Buku</p>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="../forms/tambahsewa.html" class="nav-link">
-                <i class="far fa-circle nav-icon"></i>
-                <p>Sewa Buku</p>
-              </a>
-            </li>          
-          </ul>
-        </nav>
+      <div class="sidebar" id="sidebarkonten">
+        
         <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
@@ -188,12 +131,8 @@
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-    <footer class="main-footer">
-      <div class="float-right d-none d-sm-block">
-        <b>Version</b> 3.0.2
-      </div>
-      <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AdminLTE.io</a>.</strong> All rights
-      reserved.
+    <footer class="main-footer" id="footerkonten">
+      
     </footer>
 
     <!-- Control Sidebar -->
@@ -207,18 +146,19 @@
   <!-- jQuery -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
-  <script src="../../dist/js/helper/navbar.js"></script>
+  <script src="../dist/js/helper/navbar.js"></script>
+  <script src="../dist/js/helper/head.js"></script>
 
   <script>$('.datepicker').datepicker();</script>
-  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <script src="../plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
-  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <!-- bs-custom-file-input -->
-  <script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+  <script src="../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
   <!-- AdminLTE App -->
-  <script src="../../dist/js/adminlte.min.js"></script>
+  <script src="../dist/js/adminlte.min.js"></script>
   <!-- AdminLTE for demo purposes -->
-  <script src="../../dist/js/demo.js"></script>
+  <script src="../dist/js/demo.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       bsCustomFileInput.init();

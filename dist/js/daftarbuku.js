@@ -21,6 +21,7 @@ function user(dataUser) {
     output += `
       <tr>
         <td class="text-center">${element.id}</td>
+        <td class="text-center">${element.kode}</td>
         <td class="text-center">${element.judul}</td>
         <td class="text-center">${element.kategori}</td>
         <td class="text-center">${element.genre}</td>
