@@ -30,9 +30,9 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="index.html" class="brand-link">
-        <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
-          style="opacity: .8">
-        <span class="brand-text font-weight-light">AdminLTE 3</span>
+        <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
+        <i class="fas fa-book"></i>
+        <span class="brand-text font-weight-light"> E-Library</span>
       </a>
 
       <!-- Sidebar -->
@@ -111,22 +111,20 @@
                     </div>
                     <div class="form-group">
                       <label for="labelKategori">Kategori</label>
-                      <select class="custom-select">
-                        <option>option 1</option>
-                        <option>option 2</option>
-                        <option>option 3</option>
-                        <option>option 4</option>
-                        <option>option 5</option>
+                      <select class="custom-select" id="kategori">
+                        <option>Pilih Salah Satu</option>
+                        <option value="Novel">Novel</option>
+                        <option value="Komik">Komik</option>
+                        <option value="Ensiklopedia">Ensiklopedia</option>
                       </select>
                     </div>
                     <div class="form-group">
                       <label for="labelGenre">Genre</label>
-                      <select class="custom-select">
-                        <option>option 1</option>
-                        <option>option 2</option>
-                        <option>option 3</option>
-                        <option>option 4</option>
-                        <option>option 5</option>
+                      <select class="custom-select" id="genre">
+                        <option>Pilih Salah Satu</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Action">Action</option>
                       </select>
                     </div>
                     <div class="form-group">
@@ -153,7 +151,7 @@
                           <label class="custom-file-label" for="sampulBuku">Choose file</label>
                         </div>
                         <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
+                          <span class="input-group-text" id="uploadSampul">Upload</span>
                         </div>
                       </div>
                     </div>
