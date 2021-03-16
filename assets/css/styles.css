@@ -19,11 +19,21 @@
 }
 
 .catalogue-book p {
-    line-height: 10px;
+    line-height: 2px;
 }
 
 .catalogue-img-modal {
     height: 200px;
     max-width: 200px;
+    object-fit: cover;
+}
+
+.pengembalian-view {
+    height: 150px;
+}
+
+.pengembalian-view .catalogue-img {
+    width: 100px;
+    height: 150px;
     object-fit: cover;
 }
