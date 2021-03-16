@@ -1,5 +1,6 @@
 [{
     "id": 1,
+    "kode": "AAC-1",
     "judul": "Ayat Ayat Cinta",
     "kategori": "Novel",
     "genre": "Romance",
@@ -15,6 +16,7 @@
     "sampul": "https://upload.wikimedia.org/wikipedia/id/c/c8/Ayat-Ayat_Cinta.jpg"
 },{
     "id": 2,
+    "kode": "NVL-1",
     "judul": "Laskar Pelangi",
     "kategori": "Novel",
     "genre": "Slice of Life",
@@ -30,6 +32,7 @@
     "sampul": "https://upload.wikimedia.org/wikipedia/id/thumb/8/8e/Laskar_pelangi_sampul.jpg/220px-Laskar_pelangi_sampul.jpg"
 },{
     "id": 3,
+    "kode": "KMK-1",
     "judul": "Doraemon Volume 1",
     "kategori": "Komik",
     "genre": "Action",
@@ -37,7 +40,7 @@
     "harga": "4000",
     "pengarang": "Fujiko F. Fujio",
     "penerbit": "Elex Media Computindo",
-    "tanggal_terbit": "11-08-2001",
+    "tanggal_terbit": "11/08/2001",
     "halaman": "40",
     "jumlah": "0",
     "lokasi": "G2",
