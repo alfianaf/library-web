@@ -4,18 +4,18 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | Daftar User</title>
+  <title>AdminLTE 3 | Daftar Buku</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="../../plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="../plugins/datatables-bs4/css/dataTables.bootstrap4.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="../dist/css/adminlte.min.css">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 </head>
@@ -24,15 +24,13 @@
   <div class="wrapper">
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light" id="navigasi">
-      <!-- Left navbar links -->
-
     </nav>
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
-      <a href="../../index3.html" class="brand-link">
+      <a href="index.html" class="brand-link">
         <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
           style="opacity: .8">
         <span class="brand-text font-weight-light">AdminLTE 3</span>
@@ -53,12 +51,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Daftar User</h1>
+              <h1>Daftar Buku</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active">Daftar User</li>
+                <li class="breadcrumb-item active">Daftar Buku</li>
               </ol>
             </div>
           </div>
@@ -74,7 +72,7 @@
 
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">User yang terdaftar pada perpustakaan</h3>
+                <h3 class="card-title">Daftar buku yang ada pada perpustakaan</h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -82,10 +80,13 @@
                   <thead>
                     <tr>
                       <th>No</th>
-                      <th>Nama</th>
-                      <th>Jenis Kelamin</th>
-                      <th>TTL</th>
-                      <th>Alamat</th>
+                      <th>Kode</th>
+                      <th>Judul</th>
+                      <th>Kategori</th>
+                      <th>Genre</th>
+                      <th>Harga</th>
+                      <th>Jumlah</th>
+                      <th>Lokasi</th>
                       <th>Action</th>
                     </tr>
                   </thead>
@@ -95,10 +96,13 @@
                   <tfoot>
                     <tr>
                       <th>No</th>
-                      <th>Nama</th>
-                      <th>Jenis Kelamin</th>
-                      <th>TTL</th>
-                      <th>Alamat</th>
+                      <th>Kode</th>
+                      <th>Judul</th>
+                      <th>Kategori</th>
+                      <th>Genre</th>
+                      <th>Harga</th>
+                      <th>Jumlah</th>
+                      <th>Lokasi</th>
                       <th>Action</th>
                     </tr>
                   </tfoot>
@@ -112,54 +116,57 @@
         </div>
         <!-- /.row -->
       </section>
-      <!-- /.content -->
-    </div>
-
-    <!-- Modal -->
+      <!-- Modal -->
     <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-      aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="editDataModalLabel">Edit Data</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-group">
-                <label for="nama" class="col-form-label">Nama:</label>
-                <input type="text" class="form-control" id="nama">
-              </div>
-              <div class="form-group">
-                <label for="kelamin" class="col-form-label">Jenis Kelamin:</label>
-                <input type="text" class="form-control" id="kelamin"></input>
-              </div>
-              <div class="form-group">
-                <label for="tempatlahir" class="col-form-label">Tempat Lahir:</label>
-                <input type="text" class="form-control" id="tempat"></input>
-              </div>
-              <div class="form-group">
-                <label for="tanggallahir" class="col-form-label">Tanggal Lahir:</label>
-                <input type="date" class="form-control" id="tanggal_lahir"></input>
-              </div>
-              <div class="form-group">
-                <label for="alamat" class="col-form-label">Alamat:</label>
-                <input type="text" class="form-control" id="alamat"></input>
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" id="buttonwarning" class="btn btn-warning btn-sm rounded-lg">EDIT</button>
-          </div>
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editDataModalLabel">Edit Data</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nama" class="col-form-label">Judul:</label>
+              <input type="text" class="form-control" id="judul">
+            </div>
+            <div class="form-group">
+              <label for="kelamin" class="col-form-label">Kategori:</label>
+              <input type="text" class="form-control" id="kategori"></input>
+            </div>
+            <div class="form-group">
+              <label for="tempatlahir" class="col-form-label">Genre:</label>
+              <input type="text" class="form-control" id="genre"></input>
+            </div>
+            <div class="form-group">
+              <label for="tanggallahir" class="col-form-label">Harga:</label>
+              <input type="number" class="form-control" id="harga"></input>
+            </div>
+            <div class="form-group">
+              <label for="alamat" class="col-form-label">Jumlah:</label>
+              <input type="number" class="form-control" id="jumlah"></input>
+            </div>
+            <div class="form-group">
+              <label for="alamat" class="col-form-label">Lokasi:</label>
+              <input type="text" class="form-control" id="lokasi"></input>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="buttonwarning" class="btn btn-warning btn-sm rounded-lg">EDIT</button>
         </div>
       </div>
     </div>
-    <!-- /Modal -->
+  </div>
+  <!-- /Modal -->
+      <!-- /.content -->
+    </div>
     <!-- /.content-wrapper -->
     <footer class="main-footer" id="footerkonten">
-    
+      
     </footer>
 
     <!-- Control Sidebar -->
@@ -176,7 +183,7 @@
   <script src="../dist/js/helper/navbar.js"></script>
   <script src="../dist/js/helper/head.js"></script>
 
-  <script src="../dist/js/daftaruser.js"></script>
+  <script src="../dist/js/daftarbuku.js"></script>
   <script src="../plugins/jquery/jquery.min.js"></script>
   <!-- Bootstrap 4 -->
   <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
