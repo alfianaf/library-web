@@ -78,6 +78,7 @@
               </div>
               <!-- /.card-header -->
               <div class="card-body">
+                <div class="mb-3"><button class="btn btn-success btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#tambahModal" data-placement="top" title="Tambah"><i class="fa fa-plus"></i> Tambah User</button></div>
                 <table id="example1" class="table table-bordered table-striped">
                   <thead>
                     <tr>
@@ -127,6 +128,7 @@
             </button>
           </div>
           <div class="modal-body">
+            <div class="mx-auto">
             <form>
               <div class="form-group">
                 <label for="nama" class="col-form-label">Nama:</label>
@@ -154,8 +156,106 @@
               </div>
             </form>
           </div>
+          </div>
           <div class="modal-footer">
-            <button type="button" id="buttonwarning" class="btn btn-warning btn-sm rounded-lg">EDIT</button>
+            <button type="button" id="buttonwarning" class="btn btn-warning btn-sm rounded-lg" style="color: white;">EDIT</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="tambahModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="addDataModalLabel">Add Data</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="mx-auto">
+          <form role="form">
+                    <div class="form-group">
+                      <label for="labelNik">NIK</label>
+                      <input type="text" class="form-control" id="nikUser" placeholder="NIK">
+                    </div>
+                    <div class="form-group">
+                      <label for="labelNama">Nama</label>
+                      <input type="text" class="form-control" id="namaUser" placeholder="Nama">
+                    </div>                    
+                    <div class="form-group">
+                      <label for="labelKelamin">Jenis Kelamin</label>
+                      <select class="custom-select" id="kelamin">
+                        <option selected>Pilih Salah Satu</option>
+                        <option value="Laki-Laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="labelTempat">Tempat Lahir</label>
+                      <input type="text" class="form-control" id="tempatUser" placeholder="Tempat Lahir">
+                    </div>
+                    <div class="form-group">
+                      <label for="labelTanggal">Tanggal Lahir</label>
+
+                      <div class="input-group date" data-provide="datepicker">
+                        <input type="date" class="form-control pull-right" id="datepicker" placeholder="Tanggal Lahir">
+                      </div>
+
+                    </div>
+                    <div class="form-group">
+                      <label for="labelAlamat">Alamat</label>
+                      <input type="text" class="form-control" id="alamatUser" placeholder="Alamat">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputFile">Foto</label>
+                      <div class="input-group">
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="fotoUser">
+                          <label class="custom-file-label" for="fotoUser">Choose file</label>
+                        </div>
+                        <div class="input-group-append">
+                          <span class="input-group-text" id="">Upload</span>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+          <div class="modal-footer">
+            <button type="button" id="buttonwarning" class="btn btn-success btn-sm rounded-lg">ADD</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="topupModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="topupDataModalLabel">Topup Saldo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="mx-auto">
+          <form role="form">
+              <div class="form-group">
+                <label for="labelUsername">Username Peminjam</label>
+                <input type="text" readonly="readonly"class="form-control" id="topupusername">
+              </div>
+              <div class="form-group">
+                <label for="labelUsername">Jumlah Deposit (Rp)</label>
+                <input type="number" class="form-control" id="deposit" placeholder="Jumlah Deposit">
+              </div>
+                      
+                  </form>
+                </div>
+          <div class="modal-footer">
+            <button type="button" id="buttonwarning" class="btn btn-success btn-sm rounded-lg">ADD</button>
           </div>
         </div>
       </div>
