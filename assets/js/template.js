@@ -1,10 +1,37 @@
+// ============== Deklarasi variable global ================ //
+
 // ================ Pemanggilan Fungsi ================== //
-headerTemplate();
-sidebarTemplate();
+getTemplateWithActiveLink();
 footerTemplate();
 
 // ==================== Fungsi ====================== //
-function headerTemplate() {
+function getTemplateWithActiveLink() {
+    const path = window.location.pathname;
+    const page = path.split("/").pop();
+    console.log(page);
+    let actLinkDashboard = '',
+        actLinkKatalog = '',
+        actLinkDonasi = '',
+        actLinkRiwayat = '',
+        actLinkSewa = '';
+
+    if (page === 'catalog.html') {
+        actLinkKatalog = 'active';
+    } else if (page === 'dashboard.html') {
+        actLinkDashboard = 'active';
+    } else if (page === 'donasi.html') {
+        actLinkDonasi = 'active';
+    } else if (page === 'history.html') {
+        actLinkRiwayat = 'active';
+    } else if (page === 'sewa.html') {
+        actLinkSewa = 'active';
+    }
+
+    headerTemplate(actLinkDashboard, actLinkKatalog, actLinkSewa, actLinkRiwayat, actLinkDonasi);
+    sidebarTemplate(actLinkDashboard, actLinkKatalog, actLinkSewa, actLinkRiwayat, actLinkDonasi);
+}
+
+function headerTemplate(dasboard, katalog, sewa, riwayat, donasi) {
     let print = `
                 <!-- Left navbar links -->
                 <ul class="navbar-nav">
@@ -12,19 +39,19 @@ function headerTemplate() {
                         <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="../peminjam/dashboard.html" class="nav-link">Beranda</a>
+                        <a href="../peminjam/dashboard.html" class="nav-link ${dasboard}">Beranda</a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="../peminjam/catalog.html" class="nav-link active">Katalog</a>
+                        <a href="../peminjam/catalog.html" class="nav-link ${katalog}">Katalog</a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="../peminjam/sewa.hmtl" class="nav-link">Sewa</a>
+                        <a href="../peminjam/sewa.html" class="nav-link ${sewa}">Sewa</a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="../peminjam/history.html" class="nav-link">Riwayat</a>
+                        <a href="../peminjam/history.html" class="nav-link ${riwayat}">Riwayat</a>
                     </li>
                     <li class="nav-item d-none d-sm-inline-block">
-                        <a href="../peminjam/donasi.html" class="nav-link">Donasi</a>
+                        <a href="../peminjam/donasi.html" class="nav-link ${donasi}">Donasi</a>
                     </li>
                 </ul>
 
@@ -129,7 +156,7 @@ function headerTemplate() {
                     </li>
                     <!-- Log Out Button -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="../login.html">
                             <i class="fas fa-sign-out-alt"></i>
                         </a>
                     </li>
@@ -139,7 +166,7 @@ function headerTemplate() {
     navbar.innerHTML = print;
 }
 
-function sidebarTemplate() {
+function sidebarTemplate(dasboard, katalog, sewa, riwayat, donasi) {
     let print = `
             <!-- Brand Logo -->
             <a href="./dashboard.html" class="brand-link">
@@ -167,41 +194,41 @@ function sidebarTemplate() {
                with font-awesome or any other icon font library -->
                         <li class="nav-header">DASHBOARD</li>
                         <li class="nav-item">
-                            <a href="../peminjam/dashboard.html" class="nav-link">
+                            <a href="../peminjam/dashboard.html" class="nav-link ${dasboard}">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>Dashboard</p>
                             </a>
                         </li>
                         <li class="nav-header">KATALOG</li>
                         <li class="nav-item">
-                            <a href="../peminjam/catalog.html" class="nav-link active">
+                            <a href="../peminjam/catalog.html" class="nav-link ${katalog}">
                                 <i class="nav-icon fas fa-swatchbook"></i>
                                 <p>Katalog</p>
                             </a>
                         </li>
                         <li class="nav-header">SEWA</li>
                         <li class="nav-item">
-                            <a href="../peminjam/sewa.html" class="nav-link">
+                            <a href="../peminjam/sewa.html" class="nav-link ${sewa}">
                                 <i class="nav-icon fas fa-book-open"></i>
                                 <p>Sewa Buku</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../peminjam/history.html" class="nav-link">
+                            <a href="../peminjam/history.html" class="nav-link ${riwayat}">
                                 <i class="nav-icon fas fa-exclamation-circle"></i>
                                 <p>Riwayat Sewa</p>
                             </a>
                         </li>
                         <li class="nav-header">Donasi</li>
                         <li class="nav-item">
-                            <a href="../peminjam/donasi.html" class="nav-link">
+                            <a href="../peminjam/donasi.html" class="nav-link ${donasi}">
                                 <i class="nav-icon fas fa-donate"></i>
                                 <p>Donasi</p>
                             </a>
                         </li>
                         <li class="nav-header">LOGOUT</li>
                         <li class="nav-item">
-                            <a href="pages/calendar.html" class="nav-link">
+                            <a href="../login.html" class="nav-link">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>Logout</p>
                             </a>
