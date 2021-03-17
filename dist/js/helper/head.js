@@ -12,7 +12,6 @@ function footer() {
 `;
     const footertag = document.getElementById("footerkonten");
     footertag.innerHTML = ee;
-    console.log(footertag)
 }
 function head(halaman) {
     if (page == "index.html") {
@@ -32,7 +31,6 @@ function head(halaman) {
     const headtag = document.getElementById("headkonten");
     headtag.innerHTML = head;
 
-
 }
 function href(){
     document.location.href('/');
@@ -40,14 +38,13 @@ function href(){
 function sidebar(index) {
     
     if (page == "daftaruser.html") {
-        active = 1;
-
         active1 = ``
         active2 = `active`
         active3 = ``
         active4 = ``
         active5 = ``
         active6 = ``
+        active7 = ``
 
     } else if (page == "index.html") {
         active1 = `active`
@@ -57,7 +54,8 @@ function sidebar(index) {
         active5 = ``
         active6 = ``
 
-    }
+        active7 = ``
+      }
     else if (page == "daftarbuku.html") {
         active1 = ``
         active2 = ``
@@ -65,6 +63,7 @@ function sidebar(index) {
         active4 = `active`
         active5 = ``
         active6 = ``
+      active7 = ``
     }else if (page == "tambahsewa.html") {
         active1 = ``
         active2 = ``
@@ -72,6 +71,7 @@ function sidebar(index) {
         active4 = ``
         active5 = ``
         active6 = `active`
+      active7 = ``
     }else if (page == "tambahbuku.html") {
         active1 = ``
         active2 = ``
@@ -79,6 +79,7 @@ function sidebar(index) {
         active4 = ``
         active5 = `active`
         active6 = ``
+      active7 = ``
     }else if (page == "tambahuser.html") {
         active1 = ``
         active2 = ``
@@ -86,7 +87,16 @@ function sidebar(index) {
         active4 = ``
         active5 = ``
         active6 = ``
-    }
+      active7 = ``
+    }else if (page == "daftarpinjaman.html") {
+      active1 = ``
+      active2 = ``
+      active3 = ``
+      active4 = ``
+      active5 = ``
+      active6 = ``
+      active7 = `active`
+  }
     
         let sidebar = `
     <!-- Sidebar user panel (optional) -->
@@ -145,6 +155,12 @@ function sidebar(index) {
                 <p>Sewa Buku</p>
               </a>
             </li>          
+            <li class="nav-item">
+            <a href="daftarpinjaman.html" class="nav-link ${active7}">
+              <i class="far fa-circle nav-icon"></i>
+              <p>Pengembalian Buku</p>
+            </a>
+          </li>    
           </ul>
         </nav>`;
         const sidebartag = document.getElementById("sidebarkonten");
