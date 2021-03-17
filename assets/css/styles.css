@@ -8,8 +8,8 @@
     color: black;
 }
 
-.catalogue-book .card-body {
-    height: 150px;
+.catalogue-book .card .card-body {
+    height: 125px;
 }
 
 .catalogue-img {
@@ -19,7 +19,7 @@
 }
 
 .catalogue-book p {
-    line-height: 2px;
+    line-height: 1.25;
 }
 
 .catalogue-img-modal {
@@ -36,4 +36,10 @@
     width: 100px;
     height: 150px;
     object-fit: cover;
+}
+
+@media(max-width:800px) {
+    .catalogue-book .card .card-body {
+        height: 150px;
+    }
 }
