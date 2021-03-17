@@ -1,5 +1,3 @@
-// ============== Deklarasi variable global ================ //
-
 // ================ Pemanggilan Fungsi ================== //
 getTemplateWithActiveLink();
 footerTemplate();
