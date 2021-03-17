@@ -71,23 +71,27 @@
             <!-- /.card -->
 
             <div class="card">
-              <div class="card-header">
-                <h3 class="card-title">Daftar buku yang ada pada perpustakaan</h3>
+              <div class="card-header row row-cols-4 mb-3">
+                <div class="col-5">
+                  <h3 class="card-title">Daftar buku yang ada pada perpustakaan</h3>
+                    
+                </div>
+                <div class="col-5"></div>
+                <div class="col">
+                  <button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#addModal" data-placement="top" title="Tambah"><i class="fa fa-plus"></i> Tambah Buku</button>
+
+                </div>
+                <div class="col">
+                  <button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#sewaModal" data-placement="top" title="Sewa"><i class="fa fa-plus"></i> Sewa Buku</button>
+
+
+                  
+                </div>
+                
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                  <div class="row row-cols-4 mb-3">
-                    <div class="col">
-                  <button class="btn btn-success btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#addModal" data-placement="top" title="Tambah"><i class="fa fa-plus"></i> Tambah Buku</button>
-                      
-                    </div>
-                    <div class="col-5"></div>
-                    <div class="col-5"></div>
-                    <div class="col">
-                  <button class="btn btn-success btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#sewaModal" data-placement="top" title="Sewa"><i class="fa fa-plus"></i> Sewa Buku</button>
-                      
-                    </div>
-                  </div>
+                  
                   <!-- <div class="mb-3 me-2">
                     <a class="col-6"></a>
 
@@ -95,7 +99,7 @@
                 <div class="mb-3 d-flex flex-row-reverse">
                 </div> -->
 
-                <table id="example1" class="table table-bordered table-striped">
+                <table id="tabelbaru" class="table table-bordered table-striped">
                   <thead>
                     <tr>
                       <th>No</th>
@@ -356,7 +360,7 @@
     <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
-
+ 
   <!-- jQuery -->
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
@@ -377,8 +381,7 @@
   <!-- page script -->
   <script>
     $(function () {
-      $("#example1").DataTable();
-      $('#example2').DataTable({
+      $('#tabelbaru').DataTable({
         "paging": true,
         "lengthChange": false,
         "searching": false,
