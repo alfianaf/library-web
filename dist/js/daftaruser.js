@@ -27,7 +27,7 @@ function user(dataUser) {
         
         <button class="btn btn-success btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#editModal" onclick="editData('${element.id-1}')" title="Edit"><i class="fa fa-edit"></i></button>
         <button class="btn btn-danger btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#deleteModal" onclick="deleteData('${element.id-1}')" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
-        <button class="btn btn-success btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#topupModal" onclick="topupData('${element.id-1}')" data-placement="top" title="Topup"><i class="fa fa-money-bill-wave"></i></button>
+        <button class="btn btn-info btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#topupModal" onclick="topupData('${element.id-1}')" data-placement="top" title="Topup"><i class="fa fa-money-bill-wave"></i></button>
 
         </td>
       </tr>
