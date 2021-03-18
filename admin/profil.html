@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Profil</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+    <!-- overlayScrollbars -->
+    <link rel="stylesheet" href="../plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- SweetAlert2 -->
+    <link rel="stylesheet" href="../plugins/sweetalert2/sweetalert2.min.css">
+</head>
+
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="main-header navbar navbar-expand navbar-white navbar-light" id="navigasi"></nav>
+        <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-image: linear-gradient(to left, #44a08d, #093637);">
+        <!-- Brand Logo -->
+        <a href="index.html" class="brand-link">
+          <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
+          <i class="fas fa-book"></i>
+          <span class="brand-text font-weight-light"> E-Library</span>
+        </a>
+  
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebarkonten">
+          
+          <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+      </aside>
+        <!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <br>
+            <!-- Main content -->
+            <section class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-12">
+                            <div class="card card-widget widget-user">
+                                <!-- Add the bg color to the header using any of the bg-* classes -->
+                                <div class="widget-user-header text-white text-right"
+                                    style="background: url('../assets/images/creative-assortment-with-different-books-cup-cofee.jpg') center center; object-fit: cover; background-position-x: 80%">
+                                    <h3 class="widget-user-username text-right">Alexander Pierce</h3>
+                                    <h5 class="widget-user-desc text-right">Admin</h5>
+                                    <a type="button" data-toggle="modal" data-target="#edit-profil"
+                                        class="btn btn-xs btn-outline-light"><i class="fas fa-pen-alt"></i> Edit Profil
+                                    </a>
+                                    <br><a type="button" data-toggle="modal" data-target="#ganti-password"
+                                        class="btn btn-xs btn-outline-light"><i class="fas fa-key"></i> Ganti
+                                        Password</a>
+                                    <!-- Modal Edit Profil -->
+                                    <div class="modal fade" id="edit-profil" tabindex="-1" role="dialog"
+                                        aria-labelledby="editProfilLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header"
+                                                    style="background-image: linear-gradient(to left, #44a08d, #093637);">
+                                                    <h5 class="modal-title" id="editProfilLabel">Edit Profil</h5>
+                                                    <button type="button" class="text-white close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                    <form action="#" method="post" id="edit-profil-form">
+                                                        <span class="font-weight-lighter" id="fullnameHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" id="fullname"
+                                                                placeholder="Nama Lengkap ...">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-user"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="font-weight-lighter" id="genderHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <select class="form-control" id="gender">
+                                                                <option value="">Pilih Jenis Kelamin ...</option>
+                                                                <option value="Laki-laki">Laki-laki</option>
+                                                                <option value="Perempuan">Perempuan</option>
+                                                            </select>
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-venus-mars"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="font-weight-lighter" id="tempatLahirHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" id="tempat-lahir"
+                                                                placeholder="Tempat lahir ...">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-location-arrow"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="font-weight-lighter" id="tanggalLahirHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="date" class="form-control" id="tanggal-lahir"
+                                                                placeholder="Tanggal lahir ...">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-calendar-alt"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="font-weight-lighter" id="alamatHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="text" class="form-control" id="alamat"
+                                                                placeholder="Alamat ...">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-home"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="font-weight-lighter" id="telpHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="number" class="form-control" id="telp"
+                                                                placeholder="Telepon ...">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-phone"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer bg-dark">
+                                                    <button type="reset" class="btn btn-sm btn-secondary"
+                                                        data-dismiss="modal">Batal</button>
+                                                    <button type="button" class="btn btn-sm btn-primary"
+                                                        id="edit-profil-btn">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal Ganti Password -->
+                                    <div class="modal fade" id="ganti-password" tabindex="-1" role="dialog"
+                                        aria-labelledby="gantiPasswordLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header"
+                                                    style="background-image: linear-gradient(to left, #44a08d, #093637);">
+                                                    <h5 class="modal-title" id="gantiPasswordLabel">Ganti Password</h5>
+                                                    <button type="button" class="text-white close" data-dismiss="modal"
+                                                        aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body text-left">
+                                                    <form action="#" method="post" id="ganti-password-form">
+                                                        <span class="font-weight-lighter" id="passwordHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="password" class="form-control" id="password"
+                                                                placeholder="Kata sandi saat ini">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-unlock"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="font-weight-lighter" id="passwordBaruHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="password" class="form-control"
+                                                                id="password-baru" placeholder="Kata sandi baru">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-lock"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <span class="font-weight-lighter" id="cpasswordBaruHelp"></span>
+                                                        <div class="input-group mb-3">
+                                                            <input type="password" class="form-control"
+                                                                id="cpassword-baru"
+                                                                placeholder="Konfirmasi kata sandi baru">
+                                                            <div class="input-group-append">
+                                                                <div class="input-group-text">
+                                                                    <span class="fas fa-lock"></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer bg-dark">
+                                                    <button type="reset" class="btn btn-sm btn-secondary"
+                                                        data-dismiss="modal">Batal</button>
+                                                    <button type="button" class="btn btn-sm btn-primary"
+                                                        id="res-pass-btn">Simpan</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-user-image">
+                                    <img class="img-circle" src="../dist/img/user2-160x160.jpg" alt="User Avatar">
+                                </div>
+                                <div class="card-footer">
+                                    <!-- <div class="row">                                        
+                                        <div class="col-4 col-sm-4 border-right">
+                                            <div class="description-block">
+                                                <h5 class="description-header">121</h5>
+                                                <span class="description-text">TOTAL BUKU DISEWA</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 col-sm-4">
+                                            <div class="description-block">
+                                                <h5 class="description-header">35</h5>
+                                                <span class="description-text">TOTAL DONASI</span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon elevation-1"
+                                    style="background-image: linear-gradient(to left, #44a08d, #093637);"><i
+                                        class="fas fa-venus-mars text-light"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Jenis Kelamin</span>
+                                    <span class="info-box-number">Laki-laki</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon elevation-1"
+                                    style="background-image: linear-gradient(to left, #44a08d, #093637);"><i
+                                        class="fas fa-calendar-alt text-light"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">TTL</span>
+                                    <span class="info-box-number">Pati, 28 Februari 1998</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon elevation-1"
+                                    style="background-image: linear-gradient(to left, #44a08d, #093637);"><i
+                                        class="fas fa-home text-light"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Alamat</span>
+                                    <span class="info-box-number">Pati, Jawa Tengah</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="info-box mb-3">
+                                <span class="info-box-icon elevation-1"
+                                    style="background-image: linear-gradient(to left, #44a08d, #093637);"><i
+                                        class="fas fa-phone text-light"></i></span>
+                                <div class="info-box-content">
+                                    <span class="info-box-text">Telepon</span>
+                                    <span class="info-box-number">08123456789
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Headline book -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+
+        <!-- Main Footer -->
+        <footer class="main-footer bg-dark text-center" id="footerkonten"></footer>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- REQUIRED SCRIPTS -->
+    <!-- jQuery -->
+    <script src="../plugins/jquery/jquery.min.js "></script>
+    <!-- Bootstrap -->
+    <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <!-- overlayScrollbars -->
+    <script src="../plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js "></script>
+    <!-- AdminLTE App -->
+    <script src="../dist/js/adminlte.js "></script>
+    <!-- SweetAlert2 -->
+    <script src="../plugins/sweetalert2/sweetalert2.all.min.js "></script>
+    <!-- MyScript -->
+    <script src="../dist/js/helper/navbar.js"></script>
+    <script src="../dist/js/helper/head.js"></script>
+    <script src="../dist/js/profil.js"></script>
+</body>
+
+</html>
