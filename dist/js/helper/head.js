@@ -15,23 +15,7 @@ function footer() {
     footertag.innerHTML = ee;
 }
 
-function head(halaman) {
-    if (page == "index.html") {
-        halaman = "Dashboard";
-    } else if (page == "daftaruser.html") {
-        halaman = "Daftar User";
-    }
-    let head = `
-    <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 3 | ${halaman}</title>
-  <!-- Tell the browser to be responsive to screen width -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  `;
 
-    const headtag = document.getElementById("headkonten");
-    headtag.innerHTML = head;
-}
 
 function href() {
     document.location.href("/");

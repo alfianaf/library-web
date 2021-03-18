@@ -28,6 +28,7 @@ function user(dataUser) {
         <button class="btn btn-success btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#editModal" onclick="editData('${element.id-1}')" title="Edit"><i class="fa fa-edit"></i></button>
         <button class="btn btn-danger btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#deleteModal" onclick="deleteData('${element.id-1}')" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
         <button class="btn btn-info btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#topupModal" onclick="topupData('${element.id-1}')" data-placement="top" title="Topup"><i class="fa fa-money-bill-wave"></i></button>
+        <button class="btn btn-warning btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#resetModal" onclick="resetData('${element.id-1}')" data-placement="top" title="Reset"><i class="fa fa-key"></i></button>
 
         </td>
       </tr>
@@ -37,6 +38,9 @@ function user(dataUser) {
 
   const bodyTable = document.getElementById("body-table");
   bodyTable.innerHTML = output;
+}
+function addData(){
+  
 }
 function topupData(id) {
   fetch("../../dist/js/user.json")
@@ -80,4 +84,25 @@ function deleteData(id){
     })
     // handling error
     .catch((err) => console.log(err));
+}
+function resetData(id){
+  fetch("../../dist/js/user.json")
+  .then((response) => response.json())
+  .then((json) => {
+    swal({
+      title: "Are you sure?",
+      text: "Password akan direset ke pengaturan default!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal("Success", "Berhasil Mereset Password "+json[id].nama, "success");
+      }
+    });
+        
+  })
+  // handling error
+  .catch((err) => console.log(err));
 }

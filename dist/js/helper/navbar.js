@@ -1,24 +1,37 @@
-let output = `
+var path = window.location.pathname;
+var page = path.split("/").pop();
+
+function head(){
+  let actLinkDashboard = '',actLinkDaftarUser = '',actLinkDaftarBuku = '',actLinkPengembalianBuku = '';
+
+    if (page === 'index.html') {
+      actLinkDashboard = 'active';
+    } else if (page === 'daftaruser.html') {
+      actLinkDaftarUser = 'active';
+    } else if (page === 'daftarbuku.html') {
+      actLinkDaftarBuku = 'active';
+    } else if (page === 'daftarpinjaman.html') {
+      actLinkPengembalianBuku = 'active';
+    }
+    let output = `
       <!-- Left navbar links -->
       <ul class="navbar-nav">
         <li class="nav-item">
             <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="../index2.html" class="nav-link">Beranda</a>
+            <a href="index.html" class="nav-link ${actLinkDashboard}">Beranda</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="./catalog.html" class="nav-link active">Katalog</a>
+            <a href="daftaruser.html" class="nav-link ${actLinkDaftarUser}">Daftar User</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="./keranjang.html" class="nav-link">Sewa</a>
+            <a href="daftarbuku.html" class="nav-link ${actLinkDaftarBuku}">Daftar Buku</a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Pembayaran</a>
+            <a href="daftarpinjaman.html" class="nav-link ${actLinkPengembalianBuku}">Pengembalian Buku</a>
         </li>
-        <li class="nav-item d-none d-sm-inline-block">
-            <a href="#" class="nav-link">Donasi</a>
-        </li>
+
     </ul>
 
       <!-- SEARCH FORM -->
@@ -48,3 +61,6 @@ let output = `
   const aa = document.getElementById("navigasi");
   aa.innerHTML = output;
 
+}
+
+head();

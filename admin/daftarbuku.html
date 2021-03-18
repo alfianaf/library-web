@@ -28,7 +28,8 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4"
+      style="background-image: linear-gradient(to left, #44a08d, #093637);">
       <!-- Brand Logo -->
       <a href="index.html" class="brand-link">
         <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
@@ -74,35 +75,40 @@
               <div class="card-header row row-cols-4 mb-3">
                 <div class="col-5">
                   <h3 class="card-title">Daftar buku yang ada pada perpustakaan</h3>
-                    
+
                 </div>
                 <div class="col-5"></div>
                 <div class="col">
-                  <button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#addModal" data-placement="top" title="Tambah"><i class="fa fa-plus"></i> Tambah Buku</button>
+                  <button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal"
+                    data-target="#addModal" data-placement="top" title="Tambah"><i class="fa fa-plus"></i> Tambah
+                    Buku</button>
 
                 </div>
                 <div class="col">
-                  <button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#sewaModal" data-placement="top" title="Sewa"><i class="fa fa-plus"></i> Sewa Buku</button>
+                  <button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal"
+                    data-target="#sewaModal" data-placement="top" title="Sewa"><i class="fa fa-plus"></i> Sewa
+                    Buku</button>
 
 
-                  
+
                 </div>
-                
+
               </div>
               <!-- /.card-header -->
               <div class="card-body">
-                  
-                  <!-- <div class="mb-3 me-2">
+
+                <!-- <div class="mb-3 me-2">
                     <a class="col-6"></a>
 
                   </div>
                 <div class="mb-3 d-flex flex-row-reverse">
                 </div> -->
 
-                <table id="tabelbaru" class="table table-bordered table-striped">
+                <table id="example1" class="table table-bordered table-striped">
                   <thead>
                     <tr>
                       <th>No</th>
+                      <th>Sampul</th>
                       <th>Kode</th>
                       <th>Judul</th>
                       <th>Kategori</th>
@@ -119,6 +125,7 @@
                   <tfoot>
                     <tr>
                       <th>No</th>
+                      <th>Sampul</th>
                       <th>Kode</th>
                       <th>Judul</th>
                       <th>Kategori</th>
@@ -206,94 +213,113 @@
             </div>
             <div class="modal-body">
               <div class="mx-auto">
-              <form>
+                <form id="addbuku-form">
 
-                <div class="form-group">
-                  <label for="labelKode">Kode Buku</label>
-                  <input type="text" class="form-control" id="kodeBuku" placeholder="Kode Buku">
-                </div>
-                <div class="form-group">
-                  <label for="labelJudul">Judul</label>
-                  <input type="text" class="form-control" id="judulBuku" placeholder="Judul">
-                </div>
-                <div class="form-group">
-                  <label for="labelPengarang">Pengarang</label>
-                  <input type="text" class="form-control" id="pengarangBuku" placeholder="Pengarang">
-                </div>
-                <div class="form-group">
-                  <label for="labelPenerbit">Penerbit</label>
-                  <input type="text" class="form-control" id="penerbitBuku" placeholder="Penerbit">
-                </div>
+                  <div class="form-group" id="formtambahBuku" method="post">
+                    <label for="labelJudul">Kode Buku</label>
+                    <input type="text" class="form-control" id="kodeBuku" placeholder="Kode Buku">
+                    <span class="font-weight-lighter" id="labelBuku"></span>
 
-                <div class="form-group">
-                  <label for="labelTanggal">Tanggal Terbit</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelJudul">Judul</label>
+                    <input type="text" class="form-control" id="judulBuku" placeholder="Judul">
+                    <span class="font-weight-lighter" id="labelJudul"></span>
 
-                  <div class="input-group date" data-provide="datepicker">
-                    <input type="date" class="form-control pull-right" id="datepicker" placeholder="Tanggal">
+                  </div>
+                  <div class="form-group">
+                    <label for="labelPengarang">Pengarang</label>
+                    <input type="text" class="form-control" id="pengarangBuku" placeholder="Pengarang">
+                    <span class="font-weight-lighter" id="labelPengarang"></span>
+
+                  </div>
+                  <div class="form-group">
+                    <label for="labelPenerbit">Penerbit</label>
+                    <input type="text" class="form-control" id="penerbitBuku" placeholder="Penerbit">
+                    <span class="font-weight-lighter" id="labelPenerbit"></span>
                   </div>
 
-                </div>
-                <div class="form-group">
-                  <label for="labelIsbn">ISBN</label>
-                  <input type="text" class="form-control" id="isbnBuku" placeholder="ISBN">
-                </div>
-                <div class="form-group">
-                  <label for="labelKategori">Kategori</label>
-                  <select class="custom-select" id="kategori">
-                    <option>Pilih Salah Satu</option>
-                    <option value="Novel">Novel</option>
-                    <option value="Komik">Komik</option>
-                    <option value="Ensiklopedia">Ensiklopedia</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="labelGenre">Genre</label>
-                  <select class="custom-select" id="genre">
-                    <option>Pilih Salah Satu</option>
-                    <option value="Horror">Horror</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Action">Action</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="labelHalaman">Jumlah Halaman</label>
-                  <input type="number" class="form-control" id="halamanBuku" placeholder="Jumlah Halaman">
-                </div>
-                <div class="form-group">
-                  <label for="labelJumlah">Jumlah</label>
-                  <input type="number" class="form-control" id="jumlahBuku" placeholder="Jumlah Buku">
-                </div>
-                <div class="form-group">
-                  <label for="labelJumlah">Lokasi</label>
-                  <input type="text" class="form-control" id="lokasiBuku" placeholder="Lokasi Buku">
-                </div>
-                <div class="form-group">
-                  <label for="labelDeskripsi">Deskripsi</label>
-                  <input type="text" class="form-control" id="deskripsiBuku" placeholder="Deskripsi Buku">
-                </div>
-                <div class="form-group">
-                  <label for="labelKode">User</label>
-                  <input type="text" class="form-control" id="username" placeholder="Kosongkan jika bukan donasi">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputFile">Sampul Buku</label>
-                  <div class="input-group">
-                    <div class="custom-file">
-                      <input type="file" class="custom-file-input" id="sampulBuku">
-                      <label class="custom-file-label" for="sampulBuku">Choose file</label>
-                    </div>
-                    <div class="input-group-append">
-                      <span class="input-group-text" id="uploadSampul">Upload</span>
-                    </div>
-                  </div>
-                </div>
+                  <div class="form-group">
+                    <label for="labelTanggal">Tanggal Terbit</label>
 
-              </form>
-            </div>
+                    <div class="input-group date" data-provide="datepicker">
+                      <input type="date" class="form-control pull-right" id="datepicker" placeholder="Tanggal">
+                    </div>
+
+                    <span class="font-weight-lighter" id="labelTanggal"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelISBN">ISBN</label>
+                    <input type="text" class="form-control" id="isbnBuku" placeholder="ISBN">
+                    <span class="font-weight-lighter" id="labelISBN"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelKategori">Kategori</label>
+                    <select class="custom-select" id="kategoriBuku">
+                      <option>Pilih Salah Satu</option>
+                      <option value="Novel">Novel</option>
+                      <option value="Komik">Komik</option>
+                      <option value="Ensiklopedia">Ensiklopedia</option>
+                    </select>
+                    <span class="font-weight-lighter" id="labelKategori"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelGenre">Genre</label>
+                    <select class="custom-select" id="genreBuku">
+                      <option>Pilih Salah Satu</option>
+                      <option value="Horror">Horror</option>
+                      <option value="Romance">Romance</option>
+                      <option value="Action">Action</option>
+                    </select>
+                    <span class="font-weight-lighter" id="labelGenre"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelHalaman">Jumlah Halaman</label>
+                    <input type="number" class="form-control" id="halamanBuku" placeholder="Jumlah Halaman">
+                    <span class="font-weight-lighter" id="labelHalaman"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelJumlah">Jumlah</label>
+                    <input type="number" class="form-control" id="jumlahBuku" placeholder="Jumlah Buku">
+                    <span class="font-weight-lighter" id="labelJumlah"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelLokasi">Lokasi</label>
+                    <input type="text" class="form-control" id="lokasiBuku" placeholder="Lokasi Buku">
+                    <span class="font-weight-lighter" id="labelLokasi"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelDeskripsi">Deskripsi</label>
+                    <input type="text" class="form-control" id="deskripsiBuku" placeholder="Deskripsi Buku">
+                    <span class="font-weight-lighter" id="labelDeskripsi"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelUsername">User</label>
+                    <input type="text" class="form-control" id="usernameBuku" placeholder="Kosongkan jika bukan donasi">
+                    <span class="font-weight-lighter" id="labelUsername"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="labelSampul">Sampul Buku</label>
+                    <div class="input-group">
+                      <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="sampulBuku">
+                        <label class="custom-file-label" for="sampulBuku">Choose file</label>
+                      </div>
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="uploadSampul">Upload</span>
+                      </div>
+                    </div>
+                    <span class="font-weight-lighter" id="labelSampul"></span>
+                  </div>
+
+              </div>
             </div>
             <div class="modal-footer">
-              <button type="button" id="buttonwarning" class="btn btn-success btn-sm rounded-lg">ADD</button>
+              <button type="button" id="buttonTambahBuku" class="btn btn-success btn-sm rounded-lg">ADD</button>
+
             </div>
+          </form>
+
           </div>
         </div>
       </div>
@@ -312,8 +338,8 @@
             </div>
             <div class="modal-body">
               <div class="mx-auto">
-              <form>
-                <div class="card-body">
+                <form>
+                  <div class="card-body">
                     <div class="form-group">
                       <label for="labelKode">Kode Buku</label>
                       <input type="text" class="form-control" id="kodeBuku" placeholder="Kode Buku">
@@ -334,10 +360,10 @@
                     <div class="form-group">
                       <label for="labelJumlah">Jumlah</label>
                       <input type="number" class="form-control" id="jumlahBuku" placeholder="Jumlah Buku">
-                    </div>          
                     </div>
-              </form>
-            </div>
+                  </div>
+                </form>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" id="buttonsuccess" class="btn btn-success btn-sm rounded-lg">SEWA</button>
@@ -360,8 +386,11 @@
     <!-- /.control-sidebar -->
   </div>
   <!-- ./wrapper -->
- 
+
   <!-- jQuery -->
+
+  <script type="text/javascript" src="../dist/js/jquery.validate.js"></script>
+  <script type="text/javascript" src="../dist/js/jquery.validate.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   <script src="../dist/js/helper/navbar.js"></script>
@@ -381,13 +410,13 @@
   <!-- page script -->
   <script>
     $(function () {
-      $('#tabelbaru').DataTable({
+      $('#example1').DataTable({
         "paging": true,
-        "lengthChange": false,
-        "searching": false,
+        "lengthChange": true,
+        "searching": true,
         "ordering": true,
         "info": true,
-        "autoWidth": false,
+        "autoWidth": true,
       });
     });
   </script>
