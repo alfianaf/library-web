@@ -54,11 +54,12 @@ function nikChecker(nik) {
         nikHelp.innerHTML = "NIK tidak valid!"
         nikHelp.style.color = "red";
         return false;
-    } else if (isNaN(nik) === true) {
-        nikHelp.innerHTML = "NIK tidak harus angka!"
-        nikHelp.style.color = "red";
-        return false;
-    } else {
+    } 
+    // else if (isNaN(nik) === true) {
+    //     nikHelp.innerHTML = "NIK harus angka!"
+    //     nikHelp.style.color = "red";
+    //     return false;} 
+    else {
         nikHelp.innerHTML = "Sesuai!"
         nikHelp.style.color = "green";
         return true;
@@ -101,11 +102,12 @@ function telpChecker(telp) {
         telpHelp.innerHTML = "Telepon tidak boleh kosong!"
         telpHelp.style.color = "red";
         return false;
-    } else if (isNaN(telp) === true) {
-        telpHelp.innerHTML = "Telepon harus angka!"
-        telpHelp.style.color = "red";
-        return false;
-    } else {
+    } 
+    // else if (isNaN(telp) === true) {
+    //     telpHelp.innerHTML = "Telepon harus angka!"
+    //     telpHelp.style.color = "red";
+    //     return false;} 
+    else {
         telpHelp.innerHTML = "Sesuai!"
         telpHelp.style.color = "green";
         return true;
