@@ -1,4 +1,6 @@
 // =========== FORM VALIDATION ================= //
+// let myStorage = window.localStorage;
+
 
 document.getElementById("login-button").onclick = function () {
   loginValidation();
@@ -19,6 +21,8 @@ function loginValidation() {
         title: "BERHASIL!!!",
         text: "Selamat datang di Dashboard Admin E-Library",
       }).then(() => {
+          createSession(email);
+          console.log(localStorage.getItem('session'));
         window.location = "../admin/index.html";
       });
       form.reset();
@@ -28,6 +32,7 @@ function loginValidation() {
         title: "BERHASIL!!!",
         text: "Selamat datang di E-Library",
       }).then(() => {
+        createSession(email);
         window.location = "../peminjam/catalog.html";
       });
       form.reset();
@@ -41,6 +46,18 @@ function loginValidation() {
   }
 }
 
+function createSession(email){
+    localStorage.setItem('session', email);
+
+    // populateStorage(myStorage, email);
+    
+}
+function populateStorage(localStorage, email) {
+    // var session = [];
+    localStorage.setItem('session', email);
+    // myStorage.setItem('font', 'Helvetica');
+    // myStorage.setItem('image', 'myCat.png');
+  }
 function emailChecker(email) {
   var emailHelp = document.getElementById("emailHelp");
   if (email == "") {

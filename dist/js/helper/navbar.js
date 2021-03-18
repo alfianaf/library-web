@@ -51,7 +51,7 @@ function head(){
         <!-- Messages Dropdown Menu -->
         
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="../login.html" onclick="logout()">
               <i class="fas fa-sign-out-alt"></i>
           </a>
       </li>
@@ -62,5 +62,7 @@ function head(){
   aa.innerHTML = output;
 
 }
-
+function logout(){
+  localStorage.clear();
+}
 head();
