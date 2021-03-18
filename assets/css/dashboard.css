@@ -1,0 +1,20 @@
+.buku-terpopuler img {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.buku-terpopuler .card {
+    /* background-image: linear-gradient(to top right, white, rgba(255, 255, 255, 0.857)); */
+    background-image: linear-gradient(to top right, #150e08, #825e40);
+}
+
+
+/* @media(max-width:982px) {
+    #carousel-buku-terpopular .carousel-item {
+        background-image: linear-gradient(to top right, #150e08, #825e40);
+    }
+    #carousel-buku-terpopular .carousel-item h3 {
+        color: white;
+    }
+} */

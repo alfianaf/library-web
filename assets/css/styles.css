@@ -38,6 +38,28 @@
     object-fit: cover;
 }
 
+.card-header,
+.modal-header {
+    background-image: linear-gradient(to top right, #150e08, #825e40);
+}
+
+.card-header p,
+.card-header a,
+.card-header h1,
+.card-header h2,
+.card-header h3,
+.card-header h4,
+.card-header h5,
+.modal-header p,
+.modal-header a,
+.modal-header h1,
+.modal-header h2,
+.modal-header h3,
+.modal-header h4,
+.modal-header h5 {
+    color: white;
+}
+
 
 /* Chrome, Safari, Edge, Opera */
 
@@ -45,6 +67,11 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
+}
+
+a:hover {
+    opacity: 0.5;
+    color: black;
 }
 
 
