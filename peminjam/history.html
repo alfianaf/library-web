@@ -63,112 +63,14 @@
                                                 <th>Status</th>
                                             </tr>
                                         </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>1</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>2</td>
-                                                <td>Kmk-C101-40053</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 3.000,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>3</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>4</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>5</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>6</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>7</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>8</td>
-                                                <td>Jnl-X010-340988</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>9</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>10</td>
-                                                <td>Nov-A005-20001</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td>11</td>
-                                                <td>Kmk-B001-200111</td>
-                                                <td>Lorem ipsum dolor sit amet consectetur ....</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>dd/mm/yyyy</td>
-                                                <td>Rp 0,-</td>
-                                                <td><span class="badge badge-secondary"> selesai</span></td>
-                                            </tr>
+                                        <tbody class="text-justify" id="riwayat-sewa-table">
+
                                         </tbody>
                                     </table>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-3 mt-4">
+                        <div class=" col-12 col-md-3 mt-4 ">
                         </div>
                     </div>
                 </div>
@@ -179,7 +81,7 @@
         <!-- /.content-wrapper -->
 
         <!-- Main Footer -->
-        <footer class="main-footer bg-dark text-center" id="footer-page"></footer>
+        <footer class="main-footer bg-dark text-center " id="footer-page"></footer>
     </div>
     <!-- ./wrapper -->
 
@@ -193,20 +95,21 @@
     <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.js "></script>
     <!-- DataTables -->
-    <script src="../../plugins/datatables/jquery.dataTables.js"></script>
-    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="../../plugins/datatables/jquery.dataTables.js "></script>
+    <script src="../../plugins/datatables-bs4/js/dataTables.bootstrap4.js "></script>
     <!-- MyScript -->
-    <script src="../assets/js/template.js"></script>
+    <script src="../assets/js/template.js "></script>
+    <script src="../assets/js/riwayatsewa.js "></script>
     <script>
         $(function() {
             $('#daftar-sewa').DataTable({
-                "scrollX": true,
-                "paging": true,
-                "lengthChange": false,
-                "searching": true,
-                "ordering": true,
-                "info": true,
-                "autoWidth": false,
+                "scrollX ": true,
+                "paging ": true,
+                "lengthChange ": false,
+                "searching ": true,
+                "ordering ": true,
+                "info ": true,
+                "autoWidth ": false,
             });
         });
     </script>
