@@ -1,8 +1,22 @@
 // ================ Pemanggilan Fungsi ================== //
+checkSession();
 getTemplateWithActiveLink();
 footerTemplate();
 
 // ==================== Fungsi ====================== //
+function checkSession() {
+    const storedSession = localStorage.getItem("session");
+    if (storedSession === null) {
+        window.location = "../login.html";
+    } else {
+        console.log(storedSession);
+    }
+}
+
+function logout() {
+    localStorage.clear();
+}
+
 function getTemplateWithActiveLink() {
     const path = window.location.pathname;
     const page = path.split("/").pop();
@@ -78,7 +92,7 @@ function headerTemplate(dasboard, katalog, sewa, riwayat, donasi, profil) {
                 </li>
                     <!-- Log Out Button -->
                     <li class="nav-item">
-                        <a class="nav-link" href="../login.html">
+                        <a href="../login.html" class="nav-link" type="button" onclick="logout()">
                             <i class="nav-icon fas fa-sign-out-alt"></i>
                         </a>
                     </li>
@@ -146,7 +160,7 @@ function sidebarTemplate(dasboard, katalog, sewa, riwayat, donasi, profil) {
                         </li>
                         <li class="nav-header">LOGOUT</li>
                         <li class="nav-item">
-                            <a href="../login.html" class="nav-link">
+                            <a href="../login.html" type="button" onclick="logout()" class="nav-link">
                                 <i class="nav-icon fas fa-sign-out-alt"></i>
                                 <p>Logout</p>
                             </a>
