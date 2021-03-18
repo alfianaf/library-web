@@ -7,7 +7,8 @@ document.getElementById("reg-button").onclick = function() {
 function formValidation() {
     var nik = document.getElementById("nik").value;
     var fullname = document.getElementById("fullname").value;
-    var email = document.getElementById("email").value;
+    // var email = document.getElementById("email").value;
+    var uname = document.getElementById("username").value;
     var telp = document.getElementById("telp").value;
     var password = document.getElementById("password").value;
     var cpassword = document.getElementById("cpassword").value;
@@ -15,15 +16,17 @@ function formValidation() {
 
     nikChecker(nik);
     fullnameChecker(fullname);
-    emailChecker(email);
+    // emailChecker(email);
+    usernameChecker(uname);
     telpChecker(telp);
     passwordChecker(password);
     confirmPasswordChecker(password, cpassword);
 
     if (nikChecker(nik) === true &&
         fullnameChecker(fullname) === true &&
-        emailChecker(email) === true &&
+        // emailChecker(email) === true &&
         telpChecker(telp) === true &&
+        usernameChecker(uname) === true &&
         passwordChecker(password) === true &&
         confirmPasswordChecker(password, cpassword) === true) {
         Swal.fire({
@@ -54,12 +57,11 @@ function nikChecker(nik) {
         nikHelp.innerHTML = "NIK tidak valid!"
         nikHelp.style.color = "red";
         return false;
-    } 
-    // else if (isNaN(nik) === true) {
-    //     nikHelp.innerHTML = "NIK harus angka!"
-    //     nikHelp.style.color = "red";
-    //     return false;} 
-    else {
+    } else if (isNaN(nik) === true) {
+        nikHelp.innerHTML = "NIK harus angka!"
+        nikHelp.style.color = "red";
+        return false;
+    } else {
         nikHelp.innerHTML = "Sesuai!"
         nikHelp.style.color = "green";
         return true;
@@ -102,14 +104,30 @@ function telpChecker(telp) {
         telpHelp.innerHTML = "Telepon tidak boleh kosong!"
         telpHelp.style.color = "red";
         return false;
-    } 
-    // else if (isNaN(telp) === true) {
-    //     telpHelp.innerHTML = "Telepon harus angka!"
-    //     telpHelp.style.color = "red";
-    //     return false;} 
-    else {
+    } else if (isNaN(telp) === true) {
+        telpHelp.innerHTML = "Telepon harus angka!"
+        telpHelp.style.color = "red";
+        return false;
+    } else {
         telpHelp.innerHTML = "Sesuai!"
         telpHelp.style.color = "green";
+        return true;
+    }
+}
+
+function usernameChecker(username) {
+    var usernameHelp = document.getElementById("usernameHelp");
+    if (username === "") {
+        usernameHelp.innerHTML = "Username tidak boleh kosong!"
+        usernameHelp.style.color = "red";
+        return false;
+    } else if (username.length < 5) {
+        usernameHelp.innerHTML = "Minimal 5 karakter"
+        usernameHelp.style.color = "red";
+        return false;
+    } else {
+        usernameHelp.innerHTML = "Sesuai!"
+        usernameHelp.style.color = "green";
         return true;
     }
 }
