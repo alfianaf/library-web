@@ -1,5 +1,5 @@
 fetchdata();
-
+tekan();
 function fetchdata(){
   fetch("../../dist/js/user.json")
   .then((response) => response.json())
@@ -39,6 +39,138 @@ function user(dataUser) {
   const bodyTable = document.getElementById("body-table");
   bodyTable.innerHTML = output;
 }
+function tekan() {
+  document.getElementById("buttonEditUser").onclick = function () {
+    editUser();
+    modal('hide');
+  };
+  document.getElementById("buttonTopUp").onclick = function () {
+    topupUser();
+    modal('hide');
+  };
+}
+function topupUser(){
+  var namaTopup = document.getElementById("namatopup").value;
+  var nominalTopup = document.getElementById("nominaltopup").value;
+
+  namatopup(namaTopup);
+  nominaltopup(nominalTopup);
+
+  if (
+    namatopup(namaTopup) == true &&
+    nominaltopup(nominalTopup) == true
+
+    ){
+      swal("Success", "Berhasil Menambahkan Saldo sejumlah "+namaTopup, "success");
+    }
+}
+function namatopup(namaTopup){
+  var labelnamaTopup = document.getElementById("labelnamaTopup");
+  if (namaTopup == "") {
+    labelnamaTopup.innerHTML = "Nama tidak boleh kosong!";
+    labelnamaTopup.style.color = "red";
+    return false;
+  } else {
+    labelnamaTopup.innerHTML = "Sesuai!";
+    labelnamaTopup.style.color = "green";
+    return true;
+  }
+}
+function nominaltopup(nominalTopup){
+  var labelnominalTopup = document.getElementById("labelnominalTopup");
+  if (nominalTopup == "") {
+    labelnominalTopup.innerHTML = "Nominal tidak boleh kosong!";
+    labelnominalTopup.style.color = "red";
+    return false;
+  } else {
+    labelnominalTopup.innerHTML = "Sesuai!";
+    labelnominalTopup.style.color = "green";
+    return true;
+  }
+}
+function editUser(){
+  const formEditUser = document.getElementById("editUserForm");
+  var namaEdit = document.getElementById("nama").value;
+  var kelaminEdit = document.getElementById("kelamin").value;
+  var tempatEdit = document.getElementById("tempat").value;
+  var tanggal_lahirEdit = document.getElementById("tanggal_lahir").value;
+  var alamatEdit = document.getElementById("alamat").value;
+  namaedit(namaEdit);
+  kelaminedit(kelaminEdit);
+  tempatedit(tempatEdit);
+  tanggal_lahiredit(tanggal_lahirEdit);
+  alamatedit(alamatEdit);
+  if (
+    namaedit(namaEdit) == true &&
+    kelaminedit(kelaminEdit) == true &&
+    tempatedit(tempatEdit) == true &&
+    tanggal_lahiredit(tanggal_lahirEdit) == true &&
+    alamatedit(alamatEdit) == true
+    ){
+      swal("Success", "Berhasil Mengedit Buku", "success");
+      
+    }
+}
+function namaedit(namaEdit){
+  var labelNamaEdit = document.getElementById("labelNamaEdit");
+  if (namaEdit == "") {
+    labelNamaEdit.innerHTML = "Nama tidak boleh kosong!";
+    labelNamaEdit.style.color = "red";
+    return false;
+  } else {
+    labelNamaEdit.innerHTML = "Sesuai!";
+    labelNamaEdit.style.color = "green";
+    return true;
+  }
+}
+function kelaminedit(kelaminEdit){
+  var labelKelaminEdit = document.getElementById("labelKelaminEdit");
+  if (kelaminEdit == "Pilih Salah Satu") {
+    labelKelaminEdit.innerHTML = "Jenis Kelamin tidak boleh kosong!";
+    labelKelaminEdit.style.color = "red";
+    return false;
+  } else {
+    labelKelaminEdit.innerHTML = "Sesuai!";
+    labelKelaminEdit.style.color = "green";
+    return true;
+  }
+}
+function tempatedit(tempatEdit){
+  var labelTempatLahirEdit = document.getElementById("labelTempatLahirEdit");
+  if (tempatEdit == "") {
+    labelTempatLahirEdit.innerHTML = "Tempat Lahir tidak boleh kosong!";
+    labelTempatLahirEdit.style.color = "red";
+    return false;
+  } else {
+    labelTempatLahirEdit.innerHTML = "Sesuai!";
+    labelTempatLahirEdit.style.color = "green";
+    return true;
+  }
+}
+function tanggal_lahiredit(tanggal_lahirEdit){
+  var labelTanggalLahirEdit = document.getElementById("labelTanggalLahirEdit");
+  if (tanggal_lahirEdit == "") {
+    labelTanggalLahirEdit.innerHTML = "Tanggal Lahir tidak boleh kosong!";
+    labelTanggalLahirEdit.style.color = "red";
+    return false;
+  } else {
+    labelTanggalLahirEdit.innerHTML = "Sesuai!";
+    labelTanggalLahirEdit.style.color = "green";
+    return true;
+  }
+}
+function alamatedit(alamatEdit){
+  var labelAlamatEdit = document.getElementById("labelAlamatEdit");
+  if (alamatEdit == "") {
+    labelAlamatEdit.innerHTML = "Alamat tidak boleh kosong!";
+    labelAlamatEdit.style.color = "red";
+    return false;
+  } else {
+    labelAlamatEdit.innerHTML = "Sesuai!";
+    labelAlamatEdit.style.color = "green";
+    return true;
+  }
+}
 function addData(){
   
 }
@@ -46,7 +178,7 @@ function topupData(id) {
   fetch("../../dist/js/user.json")
   .then((response) => response.json())
   .then((json) => {
-    document.getElementById('topupusername').value=json[id].nama;
+    document.getElementById('namatopup').value=json[id].nama;
   })
   // handling error
   .catch((err) => console.log(err));
