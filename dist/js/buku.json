@@ -14,7 +14,7 @@
     "lokasi": "A5",
     "deskripsi": "Ini adalah kisah cinta. Tapi bukan cuma sekadar kisah cinta yang biasa. Ini tentang bagaimana menghadapi turun-naiknya persoalan hidup dengan cara Islam.",
     "sampul": "https://upload.wikimedia.org/wikipedia/id/c/c8/Ayat-Ayat_Cinta.jpg"
-},{
+}, {
     "id": 2,
     "kode": "NVL-1",
     "judul": "Laskar Pelangi",
@@ -30,7 +30,7 @@
     "lokasi": "B7",
     "deskripsi": "Novel ini bercerita tentang kehidupan 10 anak dari keluarga miskin yang bersekolah (SD dan SMP) di sebuah sekolah Muhammadiyah di Belitung yang penuh dengan keterbatasan",
     "sampul": "https://upload.wikimedia.org/wikipedia/id/thumb/8/8e/Laskar_pelangi_sampul.jpg/220px-Laskar_pelangi_sampul.jpg"
-},{
+}, {
     "id": 3,
     "kode": "KMK-1",
     "judul": "Doraemon Volume 1",
@@ -46,5 +46,4 @@
     "lokasi": "G2",
     "deskripsi": "Berkisah tentang kehidupan seorang anak pemalas kelas 5 sekolah dasar yang bernama Nobita Nobi yang didatangi oleh sebuah robot kucing bernama Doraemon yang datang dari abad ke-22.",
     "sampul": "https://upload.wikimedia.org/wikipedia/id/c/c8/Doraemon_volume_1_cover.jpg"
-}
-]
+}]
