@@ -6,12 +6,13 @@ footerTemplate();
 function getTemplateWithActiveLink() {
     const path = window.location.pathname;
     const page = path.split("/").pop();
-    console.log(page);
+    // console.log(page);
     let actLinkDashboard = '',
         actLinkKatalog = '',
         actLinkDonasi = '',
         actLinkRiwayat = '',
-        actLinkSewa = '';
+        actLinkSewa = '',
+        actLinkProfil = '';
 
     if (page === 'catalog.html') {
         actLinkKatalog = 'active';
@@ -23,13 +24,15 @@ function getTemplateWithActiveLink() {
         actLinkRiwayat = 'active';
     } else if (page === 'sewa.html') {
         actLinkSewa = 'active';
+    } else if (page === 'profil.html') {
+        actLinkProfil = 'active';
     }
 
-    headerTemplate(actLinkDashboard, actLinkKatalog, actLinkSewa, actLinkRiwayat, actLinkDonasi);
-    sidebarTemplate(actLinkDashboard, actLinkKatalog, actLinkSewa, actLinkRiwayat, actLinkDonasi);
+    headerTemplate(actLinkDashboard, actLinkKatalog, actLinkSewa, actLinkRiwayat, actLinkDonasi, actLinkProfil);
+    sidebarTemplate(actLinkDashboard, actLinkKatalog, actLinkSewa, actLinkRiwayat, actLinkDonasi, actLinkProfil);
 }
 
-function headerTemplate(dasboard, katalog, sewa, riwayat, donasi) {
+function headerTemplate(dasboard, katalog, sewa, riwayat, donasi, profil) {
     let print = `
                 <!-- Left navbar links -->
                 <ul class="navbar-nav">
@@ -61,17 +64,22 @@ function headerTemplate(dasboard, katalog, sewa, riwayat, donasi) {
                         <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
                         <div class="input-group-append">
                             <button class="btn btn-navbar" type="submit">
-                                <i class="fas fa-search"></i>
+                                <i class="nav-icon fas fa-search"></i>
                             </button>
                         </div>
                     </div>
                 </form>
                 <!-- Right navbar links -->
                 <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="../peminjam/profil.html" class="nav-link ${profil}">
+                        <img src="../dist/img/user3-128x128.jpg" class="nav-icon img-circle elevation-2" style="width:30px; height:30px">
+                    </a>
+                </li>
                     <!-- Log Out Button -->
                     <li class="nav-item">
                         <a class="nav-link" href="../login.html">
-                            <i class="fas fa-sign-out-alt"></i>
+                            <i class="nav-icon fas fa-sign-out-alt"></i>
                         </a>
                     </li>
                 </ul>
@@ -80,32 +88,28 @@ function headerTemplate(dasboard, katalog, sewa, riwayat, donasi) {
     navbar.innerHTML = print;
 }
 
-function sidebarTemplate(dasboard, katalog, sewa, riwayat, donasi) {
+function sidebarTemplate(dasboard, katalog, sewa, riwayat, donasi, profil) {
     let print = `
             <!-- Brand Logo -->
             <a href="./dashboard.html" class="brand-link">
                 <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
-                <i class="fas fa-book fa-1x"></i>
+                <i class="nav-icon fas fa-book fa-1x"></i>
                 <span class="brand-text font-weight-light">  E-Library</span>
             </a>
 
             <!-- Sidebar -->
             <div class="sidebar">
-                <!-- Sidebar user panel (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
-                    </div>
-                </div>
-
                 <!-- Sidebar Menu -->
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+                        <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
+                        <li class="nav-header">PENGGUNA</li>
+                        <li class="nav-item">
+                            <a href="../peminjam/profil.html" class="nav-link ${profil}">
+                                <img src="../dist/img/user3-128x128.jpg" class="nav-icon img-circle elevation-2" style="width:25px; height:25px">
+                                <p>Elizabeth Pierce</p>
+                            </a>
+                        </li>
                         <li class="nav-header">DASHBOARD</li>
                         <li class="nav-item">
                             <a href="../peminjam/dashboard.html" class="nav-link ${dasboard}">
