@@ -42,13 +42,14 @@ function user(dataUser) {
   bodyTable.innerHTML = output;
 }
 function tekan() {
+  document.getElementById("buttonAddUser").onclick = function () {
+    addUser();
+  };
   document.getElementById("buttonEditUser").onclick = function () {
     editUser();
-    modal('hide');
   };
   document.getElementById("buttonTopUp").onclick = function () {
     topupUser();
-    modal('hide');
   };
 }
 function topupUser(){
@@ -63,7 +64,9 @@ function topupUser(){
     nominaltopup(nominalTopup) == true
 
     ){
-      swal("Success", "Berhasil Menambahkan Saldo sejumlah "+namaTopup, "success");
+      swal("Success", "Berhasil Menambahkan Saldo sejumlah "+namaTopup, "success").then(() => {
+        window.location = '../admin/daftaruser.html';
+    });
     }
 }
 function namatopup(namaTopup){
@@ -90,6 +93,120 @@ function nominaltopup(nominalTopup){
     return true;
   }
 }
+function addUser(){
+  // const formAddUser = document.getElementById("addUserForm");
+  var nikUserAdd = document.getElementById("nikUserAdd").value;
+  var namaUserAdd = document.getElementById("namaUserAdd").value;
+  var kelaminuserAdd = document.getElementById("kelaminuserAdd").value;
+  var tempatUserAdd = document.getElementById("tempatUserAdd").value;
+  var tanggal_lahiruserAdd = document.getElementById("tanggal_lahiruserAdd").value;
+  var alamatUserAdd = document.getElementById("alamatUserAdd").value;
+  var fotoUserAdd = document.getElementById("fotoUserAdd").value;
+  nikAdd(nikUserAdd);
+  namaAdd(namaUserAdd);
+  kelaminAdd(kelaminuserAdd);
+  tempatAdd(tempatUserAdd);
+  tanggal_lahirAdd(tanggal_lahiruserAdd);
+  alamatAdd(alamatUserAdd);
+  fotoAdd(fotoUserAdd);
+  if (nikAdd(nikUserAdd)== true &&
+  namaAdd(namaUserAdd) == true &&
+  kelaminAdd(kelaminuserAdd) == true &&
+  tempatAdd(tempatUserAdd) == true &&
+  tanggal_lahirAdd(tanggal_lahiruserAdd) == true &&
+  alamatAdd(alamatUserAdd) == true &&
+  fotoAdd(fotoUserAdd)
+    ){
+      swal("Success", "Berhasil Menambahkan User", "success").then(() => {
+        window.location = '../admin/daftaruser.html';
+    });
+      
+    }
+}
+function fotoAdd(fotoUserAdd){
+  var labelFileAdd = document.getElementById("labelFileAdd");
+  if (fotoUserAdd == "") {
+    labelFileAdd.innerHTML = "Foto tidak boleh kosong!";
+    labelFileAdd.style.color = "red";
+    return false;
+  } else {
+    labelFileAdd.innerHTML = "Sesuai!";
+    labelFileAdd.style.color = "green";
+    return true;
+  }
+}
+function alamatAdd(alamatUserAdd){
+  var labelAlamatAdd = document.getElementById("labelAlamatAdd");
+  if (alamatUserAdd == "") {
+    labelAlamatAdd.innerHTML = "Alamat tidak boleh kosong!";
+    labelAlamatAdd.style.color = "red";
+    return false;
+  } else {
+    labelAlamatAdd.innerHTML = "Sesuai!";
+    labelAlamatAdd.style.color = "green";
+    return true;
+  }
+}
+function tanggal_lahirAdd(tanggal_lahiruserAdd){
+  var labelTanggalAdd = document.getElementById("labelTanggalAdd");
+  if (tanggal_lahiruserAdd == "") {
+    labelTanggalAdd.innerHTML = "Tanggal Lahir tidak boleh kosong!";
+    labelTanggalAdd.style.color = "red";
+    return false;
+  } else {
+    labelTanggalAdd.innerHTML = "Sesuai!";
+    labelTanggalAdd.style.color = "green";
+    return true;
+  }
+}
+function tempatAdd(tempatUserAdd){
+  var labelTempatAdd = document.getElementById("labelTempatAdd");
+  if (tempatUserAdd == "") {
+    labelTempatAdd.innerHTML = "Tempat Lahir tidak boleh kosong!";
+    labelTempatAdd.style.color = "red";
+    return false;
+  } else {
+    labelTempatAdd.innerHTML = "Sesuai!";
+    labelTempatAdd.style.color = "green";
+    return true;
+  }
+}
+function kelaminAdd(kelaminuserAdd){
+  var labelKelaminAdd = document.getElementById("labelKelaminAdd");
+  if (kelaminuserAdd == "Pilih Salah Satu") {
+    labelKelaminAdd.innerHTML = "Jenis Kelamin tidak boleh kosong!";
+    labelKelaminAdd.style.color = "red";
+    return false;
+  } else {
+    labelKelaminAdd.innerHTML = "Sesuai!";
+    labelKelaminAdd.style.color = "green";
+    return true;
+  }
+}
+function namaAdd(namaUserAdd){
+  var labelNamaAdd = document.getElementById("labelNamaAdd");
+  if (namaUserAdd == "") {
+    labelNamaAdd.innerHTML = "Nama tidak boleh kosong!";
+    labelNamaAdd.style.color = "red";
+    return false;
+  } else {
+    labelNamaAdd.innerHTML = "Sesuai!";
+    labelNamaAdd.style.color = "green";
+    return true;
+  }
+}
+function nikAdd(nikUserAdd){
+  var labelNikAdd = document.getElementById("labelNikAdd");
+  if (nikUserAdd == "") {
+    labelNikAdd.innerHTML = "NIK tidak boleh kosong!";
+    labelNikAdd.style.color = "red";
+    return false;
+  } else {
+    labelNikAdd.innerHTML = "Sesuai!";
+    labelNikAdd.style.color = "green";
+    return true;
+  }
+}
 function editUser(){
   const formEditUser = document.getElementById("editUserForm");
   var namaEdit = document.getElementById("nama").value;
@@ -109,7 +226,9 @@ function editUser(){
     tanggal_lahiredit(tanggal_lahirEdit) == true &&
     alamatedit(alamatEdit) == true
     ){
-      swal("Success", "Berhasil Mengedit Buku", "success");
+      swal("Success", "Berhasil Mengedit Buku", "success").then(() => {
+        window.location = '../admin/daftaruser.html';
+    });
       
     }
 }
@@ -211,7 +330,9 @@ function deleteData(id){
       })
       .then((willDelete) => {
         if (willDelete) {
-          swal("Success", "Berhasil Menghapus Data "+json[id].nama, "success");
+          swal("Success", "Berhasil Menghapus Data "+json[id].nama, "success").then(() => {
+            window.location = '../admin/daftaruser.html';
+        });
         }
       });
           
@@ -232,7 +353,9 @@ function resetData(id){
     })
     .then((willDelete) => {
       if (willDelete) {
-        swal("Success", "Berhasil Mereset Password "+json[id].nama, "success");
+        swal("Success", "Berhasil Mereset Password "+json[id].nama, "success").then(() => {
+          window.location = '../admin/daftaruser.html';
+      });
       }
     });
         

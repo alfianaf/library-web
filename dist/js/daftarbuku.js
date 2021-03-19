@@ -81,7 +81,9 @@ function editBuku(){
     kategoribuku(kategoriBuku) == true &&
     lokasibuku(lokasiBuku) == true
     ){
-      swal("Success", "Berhasil Mengedit Buku", "success");
+      swal("Success", "Berhasil Mengedit Buku", "success").then(() => {
+        window.location = '../admin/daftarbuku.html';
+    });
       formBuku.reset();
       
     }
@@ -94,48 +96,63 @@ function addBuku() {
   var pengarangBuku = document.getElementById("pengarangBuku").value;
   var penerbitBuku = document.getElementById("penerbitBuku").value;
   var datepicker = document.getElementById("datepicker").value;
-  var kategoriBuku = document.getElementById("kategoriBuku").value;
-  var genreBuku = document.getElementById("genreBuku").value;
+  var kategoriBuku1 = document.getElementById("kategoriBuku1").value;
+  var genreBuku1 = document.getElementById("genreBuku1").value;
   var isbnBuku = document.getElementById("isbnBuku").value;
   var halamanBuku = document.getElementById("halamanBuku").value;
-  var jumlahBuku = document.getElementById("jumlahBuku").value;
-  var lokasiBuku = document.getElementById("lokasiBuku").value;
-  var deskripsiBuku = document.getElementById("deskripsiBuku").value;
+  var jumlahBuku1 = document.getElementById("jumlahBuku1").value;
+  var lokasiBuku1 = document.getElementById("lokasiBuku1").value;
+  var deskripsiBuku1 = document.getElementById("deskripsiBuku1").value;
   var sampulBuku = document.getElementById("sampulBuku").value;
-  var hargaBuku = document.getElementById("hargaBuku").value;
+  var hargaBuku1 = document.getElementById("hargaBuku1").value;
 
   kodebuku(kodeBuku);
-  judulbuku(judulBuku);
+  judulbuku1(judulBuku);
   pengarangbuku(pengarangBuku);
   penerbitbuku(penerbitBuku);
   datePicker(datepicker);
-  kategoribuku(kategoriBuku);
-  genrebuku(genreBuku);
+  kategoribuku1(kategoriBuku1);
+  genrebuku1(genreBuku1);
   isbnbuku(isbnBuku);
   halamanbuku(halamanBuku);
-  jumlahbuku(jumlahBuku);
-  lokasibuku(lokasiBuku);
-  deskripsibuku(deskripsiBuku);
+  jumlahbuku1(jumlahBuku1);
+  lokasibuku1(lokasiBuku1);
+  deskripsibuku1(deskripsiBuku1);
   sampulbuku(sampulBuku);
-  hargabuku(hargaBuku);
+  hargabuku1(hargaBuku1);
 
   if (
     kodebuku(kodeBuku) == true &&
-    judulbuku(judulBuku) == true &&
+    judulbuku1(judulBuku) == true &&
     pengarangbuku(pengarangBuku) == true &&
     penerbitbuku(penerbitBuku) == true &&
     datePicker(datepicker) == true &&
-    kategoribuku(kategoriBuku) == true &&
-    genrebuku(genreBuku) == true &&
+    kategoribuku1(kategoriBuku1) == true &&
+    genrebuku1(genreBuku1) == true &&
     isbnbuku(isbnBuku) == true &&
     halamanbuku(halamanBuku) == true &&
-    jumlahbuku(jumlahBuku) == true &&
-    lokasibuku(lokasiBuku) == true &&
-    deskripsibuku(deskripsiBuku) == true &&
-    sampulbuku(sampulBuku) == true
+    jumlahbuku1(jumlahBuku1) == true &&
+    lokasibuku1(lokasiBuku1) == true &&
+    deskripsibuku1(deskripsiBuku1) == true &&
+    sampulbuku(sampulBuku) == true &&
+    hargabuku1(hargaBuku1) == true
   ) {
-    swal("Success", "Berhasil Menambahkan Buku", "success");
+    swal("Success", "Berhasil Menambahkan Buku", "success").then(() => {
+      window.location = '../admin/daftarbuku.html';
+  });
     formBuku.reset();
+  }
+}
+function hargabuku1(hargaBuku1) {
+  var labelHarga1 = document.getElementById("labelHarga1");
+  if (hargaBuku1 == "") {
+    labelHarga1.innerHTML = "Harga Buku tidak boleh kosong!";
+    labelHarga1.style.color = "red";
+    return false;
+  } else {
+    labelHarga1.innerHTML = "Sesuai!";
+    labelHarga1.style.color = "green";
+    return true;
   }
 }
 function hargabuku(hargaBuku) {
@@ -147,6 +164,18 @@ function hargabuku(hargaBuku) {
   } else {
     labelHarga.innerHTML = "Sesuai!";
     labelHarga.style.color = "green";
+    return true;
+  }
+}
+function judulbuku1(judulBuku) {
+  var labelJudul = document.getElementById("labelJudul1");
+  if (judulBuku == "") {
+    labelJudul.innerHTML = "Judul Buku tidak boleh kosong!";
+    labelJudul.style.color = "red";
+    return false;
+  } else {
+    labelJudul.innerHTML = "Sesuai!";
+    labelJudul.style.color = "green";
     return true;
   }
 }
@@ -200,6 +229,19 @@ function datePicker(datepicker) {
     return true;
   }
 }
+function kategoribuku1(kategoriBuku1) {
+  var labelKategori = document.getElementById("labelKategori1");
+
+  if (kategoriBuku1 == "Pilih Salah Satu") {
+    labelKategori.innerHTML = "Kategori tidak boleh kosong!";
+    labelKategori.style.color = "red";
+    return false;
+  } else {
+    labelKategori.innerHTML = "Sesuai!";
+    labelKategori.style.color = "green";
+    return true;
+  }
+}
 function kategoribuku(kategoriBuku) {
   var labelKategori = document.getElementById("labelKategori");
 
@@ -210,6 +252,19 @@ function kategoribuku(kategoriBuku) {
   } else {
     labelKategori.innerHTML = "Sesuai!";
     labelKategori.style.color = "green";
+    return true;
+  }
+}
+function genrebuku1(genreBuku1) {
+  var labelGenre1 = document.getElementById("labelGenre1");
+
+  if (genreBuku1 == "Pilih Salah Satu") {
+    labelGenre1.innerHTML = "Genre tidak boleh kosong!";
+    labelGenre1.style.color = "red";
+    return false;
+  } else {
+    labelGenre1.innerHTML = "Sesuai!";
+    labelGenre1.style.color = "green";
     return true;
   }
 }
@@ -253,6 +308,19 @@ function halamanbuku(halamanBuku) {
     return true;
   }
 }
+function lokasibuku1(lokasiBuku1) {
+  var labelLokasi1 = document.getElementById("labelLokasi1");
+
+  if (lokasiBuku1 == "") {
+    labelLokasi1.innerHTML = "Lokasi tidak boleh kosong!";
+    labelLokasi1.style.color = "red";
+    return false;
+  } else {
+    labelLokasi1.innerHTML = "Sesuai!";
+    labelLokasi1.style.color = "green";
+    return true;
+  }
+}
 function lokasibuku(lokasiBuku) {
   var labelLokasi = document.getElementById("labelLokasi");
 
@@ -263,6 +331,19 @@ function lokasibuku(lokasiBuku) {
   } else {
     labelLokasi.innerHTML = "Sesuai!";
     labelLokasi.style.color = "green";
+    return true;
+  }
+}
+function jumlahbuku1(jumlahBuku1) {
+  var labelJumlah1 = document.getElementById("labelJumlah1");
+
+  if (jumlahBuku1 == "") {
+    labelJumlah1.innerHTML = "Jumlah tidak boleh kosong!";
+    labelJumlah1.style.color = "red";
+    return false;
+  } else {
+    labelJumlah1.innerHTML = "Sesuai!";
+    labelJumlah1.style.color = "green";
     return true;
   }
 }
@@ -279,16 +360,16 @@ function jumlahbuku(jumlahBuku) {
     return true;
   }
 }
-function deskripsibuku(deskripsiBuku) {
-  var labelDeskripsi = document.getElementById("labelDeskripsi");
+function deskripsibuku1(deskripsiBuku1) {
+  var labelDeskripsi1 = document.getElementById("labelDeskripsi1");
 
-  if (deskripsiBuku == "") {
-    labelDeskripsi.innerHTML = "Jumlah tidak boleh kosong!";
-    labelDeskripsi.style.color = "red";
+  if (deskripsiBuku1 == "") {
+    labelDeskripsi1.innerHTML = "Deskripsi tidak boleh kosong!";
+    labelDeskripsi1.style.color = "red";
     return false;
   } else {
-    labelDeskripsi.innerHTML = "Sesuai!";
-    labelDeskripsi.style.color = "green";
+    labelDeskripsi1.innerHTML = "Sesuai!";
+    labelDeskripsi1.style.color = "green";
     return true;
   }
 }
@@ -296,7 +377,7 @@ function sampulbuku(sampulBuku) {
   var labelSampul = document.getElementById("labelSampul");
 
   if (sampulBuku == "") {
-    labelSampul.innerHTML = "Jumlah tidak boleh kosong!";
+    labelSampul.innerHTML = "Sampul tidak boleh kosong!";
     labelSampul.style.color = "red";
     return false;
   } else {
@@ -335,7 +416,9 @@ function sewaBuku(){
     durasisewa(durasi) == true &&
     jumlahsewa(jumlahBuku) == true)
     {
-      swal("Success", "Berhasil Menambahkan Buku", "success");
+      swal("Success", "Berhasil Menambahkan Buku", "success").then(() => {
+        window.location = '../admin/daftarbuku.html';
+    });
       formSewa.reset();
     }
 }
@@ -353,7 +436,7 @@ function penyewabuku(penyewa){
   }
 }
 function kodesewa(kodeBuku1) {
-  var labelKode = document.getElementById("labelKode");
+  var labelKode = document.getElementById("labelKode1");
 
   if (kodeBuku1 == "") {
     labelKode.innerHTML = "Kode Buku tidak boleh kosong!";

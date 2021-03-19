@@ -151,55 +151,89 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="color:white;background-image: linear-gradient(to left, #44a08d, #093637);">
               <h5 class="modal-title" id="editDataModalLabel">Edit Data</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="nama" class="col-form-label">Judul:</label>
-                  <input type="text" class="form-control" id="judulBuku">
-                  <span class="font-weight-lighter" id="labelJudul"></span>
+              <div class="px-5">
 
-                </div>
-                <div class="form-group">
+                <form>
+                  <label for="nama" class="col-form-label">Judul:</label>
+                  <span class="font-weight-lighter ml-3" id="labelJudul"></span>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="judulBuku">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-heading"></span>
+                      </div>
+                    </div>
+                  </div>
                   <label for="labelKategori">Kategori</label>
-                  <select class="custom-select" id="kategoriBuku">
-                    <option value="Novel">Novel</option>
-                    <option value="Komik">Komik</option>
-                    <option value="Ensiklopedia">Ensiklopedia</option>
-                  </select>
-                    <span class="font-weight-lighter" id="labelKategori"></span>
+                  <span class="font-weight-lighter ml-3" id="labelKategori"></span>
+                  <div class="input-group">
+                    <select class="custom-select" id="kategoriBuku">
+                      <option value="Novel">Novel</option>
+                      <option value="Komik">Komik</option>
+                      <option value="Ensiklopedia">Ensiklopedia</option>
+                    </select>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-list"></span>
+                      </div>
+                    </div>
                   </div>
-                <div class="form-group">
                   <label for="labelGenre">Genre</label>
-                  <select class="custom-select" id="genreBuku">
-                    <option value="Horror">Horror</option>
-                    <option value="Romance">Romance</option>
-                    <option value="Action">Action</option>
-                  </select>
-                    <span class="font-weight-lighter" id="labelGenre"></span>
+                  <span class="font-weight-lighter ml-3" id="labelGenre"></span>
+                  <div class="input-group">
+                    <select class="custom-select" id="genreBuku">
+                      <option value="Horror">Horror</option>
+                      <option value="Romance">Romance</option>
+                      <option value="Action">Action</option>
+                    </select>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-list"></span>
+                      </div>
+                    </div>
                   </div>
-                <div class="form-group">
                   <label for="tanggallahir" class="col-form-label">Harga:</label>
-                  <input type="number" class="form-control" id="hargaBuku"></input>
-                    <span class="font-weight-lighter" id="labelHarga"></span>
+                  <span class="font-weight-lighter ml-3" id="labelHarga"></span>
+                  <div class="input-group">
+                    <input type="number" class="form-control" id="hargaBuku"></input>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-dollar-sign"></span>
+                      </div>
+                    </div>
                   </div>
-                <div class="form-group">
+
                   <label for="alamat" class="col-form-label">Jumlah:</label>
-                  <input type="number" class="form-control" id="jumlahBuku"></input>
-                    <span class="font-weight-lighter" id="labelJumlah"></span>
+                  <span class="font-weight-lighter ml-3" id="labelJumlah"></span>
+                  <div class="input-group">
+                    <input type="number" class="form-control" id="jumlahBuku"></input>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-calculator"></span>
+                      </div>
+                    </div>
                   </div>
-                <div class="form-group">
                   <label for="alamat" class="col-form-label">Lokasi:</label>
-                  <input type="text" class="form-control" id="lokasiBuku"></input>
-                    <span class="font-weight-lighter" id="labelLokasi"></span>
+                  <span class="font-weight-lighter ml-3" id="labelLokasi"></span>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="lokasiBuku"></input>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-map-marker-alt"></span>
+                      </div>
+                    </div>
                   </div>
+              </div>
+              
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer bg-dark">
               <button type="button" id="buttonEditBuku" class="btn btn-warning btn-sm rounded-lg">EDIT</button>
             </div>
           </form>
@@ -213,125 +247,204 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="color:white;background-image: linear-gradient(to left, #44a08d, #093637);">
               <h5 class="modal-title" id="addDataModalLabel">Add Data</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <div class="mx-auto">
+              <div class="px-5">
                 <form id="addbuku-form">
+                  <label for="labelKode">Kode Buku</label>
+                  <span class="font-weight-lighter ml-3 ml-3" id="labelKode"></span>
+                  <div class="input-group" id="formtambahBuku" method="post">
 
-                  <div class="form-group" id="formtambahBuku" method="post">
-                    <label for="labelJudul">Kode Buku</label>
                     <input type="text" class="form-control" id="kodeBuku" placeholder="Kode Buku">
-                    <span class="font-weight-lighter" id="labelBuku"></span>
-
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-keyboard"></span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="labelJudul">Judul</label>
+                  <label for="labelJudul1">Judul</label>
+                  <span class="font-weight-lighter ml-3" id="labelJudul1"></span>
+                  <div class="input-group">
+
                     <input type="text" class="form-control" id="judulBuku" placeholder="Judul">
-                    <span class="font-weight-lighter" id="labelJudul"></span>
-
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-heading"></span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="labelPengarang">Pengarang</label>
+                  <label for="labelPengarang">Pengarang</label>
+                  <span class="font-weight-lighter ml-3" id="labelPengarang"></span>
+                  <div class="input-group">
+
                     <input type="text" class="form-control" id="pengarangBuku" placeholder="Pengarang">
-                    <span class="font-weight-lighter" id="labelPengarang"></span>
-
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-pen"></span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="labelPenerbit">Penerbit</label>
+                  <label for="labelPenerbit">Penerbit</label>
+                  <span class="font-weight-lighter ml-3" id="labelPenerbit"></span>
+                  <div class="input-group">
+
                     <input type="text" class="form-control" id="penerbitBuku" placeholder="Penerbit">
-                    <span class="font-weight-lighter" id="labelPenerbit"></span>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-print"></span>
+                      </div>
+                    </div>
                   </div>
-
-                  <div class="form-group">
-                    <label for="labelTanggal">Tanggal Terbit</label>
+                  <label for="labelTanggal">Tanggal Terbit</label>
+                  <span class="font-weight-lighter ml-3" id="labelTanggal"></span>
+                  <div class="input-group">
 
                     <div class="input-group date" data-provide="datepicker">
                       <input type="date" class="form-control pull-right" id="datepicker" placeholder="Tanggal">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-calendar-alt"></span>
+                        </div>
+                      </div>
                     </div>
 
-                    <span class="font-weight-lighter" id="labelTanggal"></span>
                   </div>
-                  <div class="form-group">
-                    <label for="labelISBN">ISBN</label>
+                  <label for="labelISBN">ISBN</label>
+                  <span class="font-weight-lighter ml-3" id="labelISBN"></span>
+                  <div class="input-group">
+
                     <input type="text" class="form-control" id="isbnBuku" placeholder="ISBN">
-                    <span class="font-weight-lighter" id="labelISBN"></span>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-barcode"></span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="labelKategori">Kategori</label>
-                    <select class="custom-select" id="kategoriBuku">
+                  <label for="labelKategori1">Kategori</label>
+                  <span class="font-weight-lighter ml-3" id="labelKategori1"></span>
+                  <div class="input-group">
+
+                    <select class="custom-select" id="kategoriBuku1">
                       <option>Pilih Salah Satu</option>
                       <option value="Novel">Novel</option>
                       <option value="Komik">Komik</option>
                       <option value="Ensiklopedia">Ensiklopedia</option>
                     </select>
-                    <span class="font-weight-lighter" id="labelKategori"></span>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-list-alt"></span>
+                      </div>
+                    </div>
                   </div>
-                  <div class="form-group">
-                    <label for="labelGenre">Genre</label>
-                    <select class="custom-select" id="genreBuku">
+                  <label for="labelGenre">Genre</label>
+                  <span class="font-weight-lighter ml-3" id="labelGenre1"></span>
+                  <div class="input-group">
+
+                    <select class="custom-select" id="genreBuku1">
                       <option>Pilih Salah Satu</option>
                       <option value="Horror">Horror</option>
                       <option value="Romance">Romance</option>
                       <option value="Action">Action</option>
                     </select>
-                    <span class="font-weight-lighter" id="labelGenre"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="labelHalaman">Jumlah Halaman</label>
-                    <input type="number" class="form-control" id="halamanBuku" placeholder="Jumlah Halaman">
-                    <span class="font-weight-lighter" id="labelHalaman"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="labelJumlah">Jumlah</label>
-                    <input type="number" class="form-control" id="jumlahBuku" placeholder="Jumlah Buku">
-                    <span class="font-weight-lighter" id="labelJumlah"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="labelHarga">Harga</label>
-                    <input type="number" class="form-control" id="hargaBuku" placeholder="Harga Buku">
-                    <span class="font-weight-lighter" id="labelHarga"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="labelLokasi">Lokasi</label>
-                    <input type="text" class="form-control" id="lokasiBuku" placeholder="Lokasi Buku">
-                    <span class="font-weight-lighter" id="labelLokasi"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="labelDeskripsi">Deskripsi</label>
-                    <input type="text" class="form-control" id="deskripsiBuku" placeholder="Deskripsi Buku">
-                    <span class="font-weight-lighter" id="labelDeskripsi"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="labelUsername">User</label>
-                    <input type="text" class="form-control" id="usernameBuku" placeholder="Kosongkan jika bukan donasi">
-                    <span class="font-weight-lighter" id="labelUsername"></span>
-                  </div>
-                  <div class="form-group">
-                    <label for="labelSampul">Sampul Buku</label>
-                    <div class="input-group">
-                      <div class="custom-file">
-                        <input type="file" class="custom-file-input" id="sampulBuku">
-                        <label class="custom-file-label" for="sampulBuku">Choose file</label>
-                      </div>
-                      <div class="input-group-append">
-                        <span class="input-group-text" id="uploadSampul">Upload</span>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-list-alt"></span>
                       </div>
                     </div>
-                    <span class="font-weight-lighter" id="labelSampul"></span>
+                  </div>
+                  <label for="labelHalaman">Jumlah Halaman</label>
+                  <span class="font-weight-lighter ml-3" id="labelHalaman"></span>
+                  <div class="input-group">
+
+                    <input type="number" class="form-control" id="halamanBuku" placeholder="Jumlah Halaman">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-sort-numeric-up"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="labelJumlah">Jumlah</label>
+                  <span class="font-weight-lighter ml-3" id="labelJumlah1"></span>
+                  <div class="input-group">
+
+                    <input type="number" class="form-control" id="jumlahBuku1" placeholder="Jumlah Buku">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-calculator"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="labelHarga">Harga</label>
+                  <span class="font-weight-lighter ml-3" id="labelHarga1"></span>
+                  <div class="input-group">
+
+                    <input type="number" class="form-control" id="hargaBuku1" placeholder="Harga Buku">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-dollar-sign"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="labelLokasi">Lokasi</label>
+                  <span class="font-weight-lighter ml-3" id="labelLokasi1"></span>
+                  <div class="input-group">
+
+                    <input type="text" class="form-control" id="lokasiBuku1" placeholder="Lokasi Buku">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-map-marker-alt"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="labelDeskripsi">Deskripsi</label>
+                  <span class="font-weight-lighter ml-3" id="labelDeskripsi1"></span>
+                  <div class="input-group">
+
+                    <input type="text" class="form-control" id="deskripsiBuku1" placeholder="Deskripsi Buku">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-info"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="labelUsername">User</label>
+                  <span class="font-weight-lighter ml-3" id="labelUsername"></span>
+                  <div class="input-group">
+
+                    <input type="text" class="form-control" id="usernameBuku" placeholder="Kosongkan jika bukan donasi">
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-user"></span>
+                      </div>
+                    </div>
+                  </div>
+                  <label for="labelSampul">Sampul Buku</label>
+                  <span class="font-weight-lighter ml-3" id="labelSampul"></span>
+                  <div class="input-group">
+
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="sampulBuku">
+                      <label class="custom-file-label" for="sampulBuku">Choose file</label>
+                    </div>
+                    <div class="input-group-append">
+                      <div class="input-group-text">
+                        <span class="fas fa-upload"></span>
+                      </div>
+                    </div>
                   </div>
 
               </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer bg-dark">
               <button type="button" id="buttonTambahBuku" class="btn btn-success btn-sm rounded-lg">ADD</button>
 
             </div>
-          </form>
+            </form>
 
           </div>
         </div>
@@ -343,49 +456,73 @@
         aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" style="color:white;background-image: linear-gradient(to left, #44a08d, #093637);">
               <h5 class="modal-title" id="sewaDataModalLabel">Sewa Buku</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <div class="mx-auto">
+              <div class="px-5">
                 <form id="formSewa">
                   <div class="card-body">
-                    <div class="form-group">
-                      <label for="labelKode">Kode Buku</label>
+                    <label for="labelKode1">Kode Buku</label>
+                    <span class="font-weight-lighter ml-3 ml-3" id="labelKode1"></span>
+                    <div class="input-group">
+
                       <input type="text" class="form-control" id="kodeBuku1" placeholder="Kode Buku">
-                    <span class="font-weight-lighter" id="labelKode"></span>
-                  </div>
-                  <div class="form-group">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-keyboard"></span>
+                        </div>
+                      </div>
+                    </div>
                     <label for="labelsewa">Penyewa</label>
-                    <input type="text" class="form-control" id="penyewa" placeholder="Penyewa">
-                  <span class="font-weight-lighter" id="labelsewa"></span>
-                </div>
-                    <div class="form-group">
-                      <label for="labelDurasi">Lama Pinjam</label>
+                    <span class="font-weight-lighter ml-3" id="labelsewa"></span>
+                    <div class="input-group">
+
+                      <input type="text" class="form-control" id="penyewa" placeholder="Penyewa">
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-user"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <label for="labelDurasi">Lama Pinjam</label>
+                    <span class="font-weight-lighter ml-3" id="labelDurasi"></span>
+                    <div class="input-group">
+
                       <select class="custom-select" id="durasi">
                         <option selected>Pilih Salah Satu</option>
                         <option value="1">3 Hari</option>
                         <option value="2">1 Minggu</option>
                         <option value="3">2 Minggu</option>
                       </select>
-                    <span class="font-weight-lighter" id="labelDurasi"></span>
-                  </div>
-                    <div class="form-group">
-                      <label for="labeljumlahsewa">Jumlah</label>
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-clock"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <label for="labeljumlahsewa">Jumlah</label>
+                    <span class="font-weight-lighter ml-3" id="labeljumlahsewa"></span>
+                    <div class="input-group">
+
                       <input type="number" class="form-control" id="jumlahsewabuku" placeholder="Jumlah Buku">
-                    <span class="font-weight-lighter" id="labeljumlahsewa"></span>
-                  </div>
+                      <div class="input-group-append">
+                        <div class="input-group-text">
+                          <span class="fas fa-calculator"></span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
               </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer bg-dark">
               <button type="button" id="buttonSewaBuku" class="btn btn-success btn-sm rounded-lg">SEWA</button>
             </div>
-          </form>
-        </div>
+            </form>
+          </div>
         </div>
       </div>
       <!-- /Modal -->

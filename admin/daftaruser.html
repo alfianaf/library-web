@@ -30,7 +30,8 @@
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-image: linear-gradient(to left, #44a08d, #093637);">
+    <aside class="main-sidebar sidebar-dark-primary elevation-4"
+      style="background-image: linear-gradient(to left, #44a08d, #093637);">
       <!-- Brand Logo -->
       <a href="index.html" class="brand-link">
         <!-- <img src="../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8"> -->
@@ -40,7 +41,7 @@
 
       <!-- Sidebar -->
       <div class="sidebar" id="sidebarkonten">
-        
+
         <!-- /.sidebar-menu -->
       </div>
       <!-- /.sidebar -->
@@ -76,16 +77,18 @@
               <div class="card-header row row-cols-4 mb-3">
                 <div class="col-5">
                   <h3 class="card-title">User yang terdaftar pada perpustakaan</h3>
-                    
+
                 </div>
                 <div class="col"></div>
                 <div class="col-5"></div>
                 <div class="col">
-                  <div class="mb-3"><button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal" data-target="#tambahModal" data-placement="top" title="Tambah"><i class="fa fa-plus"></i> Tambah User</button></div>
+                  <div class="mb-3"><button class="btn btn-primary btn-sm rounded-lg" type="button" data-toggle="modal"
+                      data-target="#tambahModal" data-placement="top" title="Tambah"><i class="fa fa-plus"></i> Tambah
+                      User</button></div>
 
-                  
+
                 </div>
-                
+
               </div>
               <!-- /.card-header -->
               <div class="card-body">
@@ -132,51 +135,77 @@
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" style="color:white;background-image: linear-gradient(to left, #44a08d, #093637);">
             <h5 class="modal-title" id="editDataModalLabel">Edit Data</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <div class="mx-auto">
-            <form id="editUserForm">
-              <div class="form-group">
-                <label for="nama" class="col-form-label">Nama:</label>
-                <input type="text" class="form-control" id="nama">
-                <span class="font-weight-lighter" id="labelNamaEdit"></span>
-              </div>
-              <div class="form-group">
+            <div class="px-5">
+              <form id="editUserForm">
+                <label for="nama" class="col-form-label">Nama</label>
+                  <span class="font-weight-lighter ml-3" id="labelNamaEdit"></span>
+                <div class="input-group">                 
+                  <input type="text" class="form-control" id="nama">
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-user"></span>
+                    </div>
+                  </div>
+                </div>
                 <label for="labelKelamin">Jenis Kelamin</label>
-                <select class="custom-select" id="kelamin">
-                  <option selected>Pilih Salah Satu</option>
-                  <option value="Laki-Laki">Laki-Laki</option>
-                  <option value="Perempuan">Perempuan</option>
-                </select>
-                <span class="font-weight-lighter" id="labelKelaminEdit"></span>
-              </div>
-              <div class="form-group">
+                  <span class="font-weight-lighter ml-3" id="labelKelaminEdit"></span>
+                <div class="input-group">                 
+                  <select class="custom-select" id="kelamin">
+                    <option selected>Pilih Salah Satu</option>
+                    <option value="Laki-Laki">Laki-Laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                  </select>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-venus-mars"></span>
+                    </div>
+                  </div>
+                </div>
                 <label for="tempatlahir" class="col-form-label">Tempat Lahir:</label>
-                <input type="text" class="form-control" id="tempat"></input>
-                <span class="font-weight-lighter" id="labelTempatLahirEdit"></span>
-              </div>
-              <div class="form-group">
+                  <span class="font-weight-lighter ml-3" id="labelTempatLahirEdit"></span>
+                <div class="input-group">                 
+                  <input type="text" class="form-control" id="tempat"></input>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-location-arrow"></span>
+                    </div>
+                  </div>
+                </div>
                 <label for="tanggallahir" class="col-form-label">Tanggal Lahir:</label>
-                <input type="date" class="form-control" id="tanggal_lahir"></input>
-                <span class="font-weight-lighter" id="labelTanggalLahirEdit"></span>
-              </div>
-              <div class="form-group">
+                  <span class="font-weight-lighter ml-3" id="labelTanggalLahirEdit"></span>
+                <div class="input-group">                 
+                  <input type="date" class="form-control" id="tanggal_lahir"></input>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-calendar-alt"></span>
+                    </div>
+                  </div>
+                </div>
                 <label for="alamat" class="col-form-label">Alamat:</label>
-                <input type="text" class="form-control" id="alamat"></input>
-                <span class="font-weight-lighter" id="labelAlamatEdit"></span>
-              </div>
+                  <span class="font-weight-lighter ml-3" id="labelAlamatEdit"></span>
+                <div class="input-group">                
+                  <input type="text" class="form-control" id="alamat"></input>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-map-marked-alt"></span>
+                    </div>
+                  </div>
+                </div>
+            </div>
           </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" id="buttonEditUser" class="btn btn-warning btn-sm rounded-lg"
+              style="color: white;">EDIT</button>
           </div>
-          <div class="modal-footer">
-            <button type="button" id="buttonEditUser" class="btn btn-warning btn-sm rounded-lg" style="color: white;">EDIT</button>
-          </div>
-            </form>
-          </div>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -184,64 +213,111 @@
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" style="color:white;background-image: linear-gradient(to left, #44a08d, #093637);">
             <h5 class="modal-title" id="addDataModalLabel">Add Data</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="mx-auto">
-          <form role="form">
-                    <div class="form-group">
-                      <label for="labelNik">NIK</label>
-                      <input type="number" class="form-control" id="nikUser" placeholder="NIK">
-                    </div>
-                    <div class="form-group">
-                      <label for="labelNama">Nama</label>
-                      <input type="text" class="form-control" id="namaUser" placeholder="Nama">
-                    </div>                    
-                    <div class="form-group">
-                      <label for="labelKelamin">Jenis Kelamin</label>
-                      <select class="custom-select" id="kelamin">
-                        <option selected>Pilih Salah Satu</option>
-                        <option value="Laki-Laki">Laki-Laki</option>
-                        <option value="Perempuan">Perempuan</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="labelTempat">Tempat Lahir</label>
-                      <input type="text" class="form-control" id="tempatUser" placeholder="Tempat Lahir">
-                    </div>
-                    <div class="form-group">
-                      <label for="labelTanggal">Tanggal Lahir</label>
-
-                      <div class="input-group date" data-provide="datepicker">
-                        <input type="date" class="form-control pull-right" id="datepicker" placeholder="Tanggal Lahir">
-                      </div>
-
-                    </div>
-                    <div class="form-group">
-                      <label for="labelAlamat">Alamat</label>
-                      <input type="text" class="form-control" id="alamatUser" placeholder="Alamat">
-                    </div>
-
-                    <div class="form-group">
-                      <label for="exampleInputFile">Foto</label>
-                      <div class="input-group">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="fotoUser">
-                          <label class="custom-file-label" for="fotoUser">Choose file</label>
-                        </div>
-                        <div class="input-group-append">
-                          <span class="input-group-text" id="">Upload</span>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+          <div class="px-5">
+            <form role="form">
+              <label for="labelNikAdd">NIK</label>
+              <span class="font-weight-lighter ml-3" id="labelNikAdd"></span>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" id="nikUserAdd" placeholder="NIK">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-id-card"></span>
+                  </div>
                 </div>
-          <div class="modal-footer">
-            <button type="button" id="buttonwarning" class="btn btn-success btn-sm rounded-lg">ADD</button>
+              </div>
+              <label for="labelNamaAdd">Nama</label>
+              <span class="font-weight-lighter ml-3" id="labelNamaAdd"></span>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="namaUserAdd" placeholder="Nama">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                  </div>
+                </div>
+                <span class="font-weight-lighter ml-3" id="labelNamaAdd"></span>
+              </div>
+
+              <label for="labelKelaminAdd">Jenis Kelamin</label>
+              <span class="font-weight-lighter ml-3 ml-3" id="labelKelaminAdd"></span>
+
+              <div class="input-group mb-3">
+                <select class="custom-select" id="kelaminuserAdd">
+                  <option selected>Pilih Salah Satu</option>
+                  <option value="Laki-Laki">Laki-Laki</option>
+                  <option value="Perempuan">Perempuan</option>
+                </select>
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-venus-mars"></span>
+                  </div>
+                </div>
+              </div>
+
+              <label for="labelTempatAdd">Tempat Lahir</label>
+              <span class="font-weight-lighter ml-3 ml-3" id="labelTempatAdd"></span>
+
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="tempatUserAdd" placeholder="Tempat Lahir">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-location-arrow"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <label for="labelTanggalAdd">Tanggal Lahir</label>
+                <span class="font-weight-lighter ml-3" id="labelTanggalAdd"></span>
+
+                <div class="input-group date" data-provide="datepicker">
+                  <input type="date" class="form-control pull-right" id="tanggal_lahiruserAdd"
+                    placeholder="Tanggal Lahir">
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-calendar-alt"></span>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <label for="labelAlamatAdd">Alamat</label>
+              <span class="font-weight-lighter ml-3" id="labelAlamatAdd"></span>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" id="alamatUserAdd" placeholder="Alamat">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-map-marked-alt"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group mb-3">
+                <label for="labelFileAdd">Foto</label>
+                <span class="font-weight-lighter ml-3" id="labelFileAdd"></span>
+
+                <div class="input-group">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="fotoUserAdd">
+                    <label class="custom-file-label" for="fotoUser">Choose file</label>
+                  </div>
+                  <div class="input-group-append">
+                    <div class="input-group-text">
+                      <span class="fas fa-upload"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" id="buttonAddUser" class="btn btn-success btn-sm rounded-lg">ADD</button>
+          </div>
+          </form>
         </div>
       </div>
     </div>
@@ -251,37 +327,47 @@
       aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
+          <div class="modal-header" style="color:white;background-image: linear-gradient(to left, #44a08d, #093637);">
             <h5 class="modal-title" id="topupDataModalLabel">Topup Saldo</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="mx-auto">
-          <form id="formtopup">
-              <div class="form-group">
-                <label for="labelnamaTopup">Username Peminjam</label>
-                <input type="text" readonly="readonly"class="form-control" id="namatopup">
-                <span class="font-weight-lighter" id="labelnamaTopup"></span>
-              </div>
-              <div class="form-group">
-                <label for="labelnominalTopup">Jumlah Deposit (Rp)</label>
-                <input type="number" class="form-control" id="nominaltopup" placeholder="Jumlah Deposit">
-                <span class="font-weight-lighter" id="labelnominalTopup"></span>
-              </div>
-                      
+          <div class="p-5">
+            <form id="formtopup">
+              <label for="labelnamaTopup">Username Peminjam</label>
+              <span class="font-weight-lighter ml-3" id="labelnamaTopup"></span>
+              <div class="input-group">
+                <input type="text" readonly="readonly" class="form-control" id="namatopup">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                  </div>
                 </div>
-          <div class="modal-footer">
+              </div>
+              <label for="labelnominalTopup">Jumlah Deposit (Rp)</label>
+              <span class="font-weight-lighter ml-3" id="labelnominalTopup"></span>
+              <div class="input-group">
+                <input type="number" class="form-control" id="nominaltopup" placeholder="Jumlah Deposit">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-dollar-sign"></span>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+          <div class="modal-footer bg-dark">
             <button type="button" id="buttonTopUp" class="btn btn-success btn-sm rounded-lg">ADD</button>
           </div>
-        </form>
-      </div>
+          </form>
+        </div>
       </div>
     </div>
     <!-- /Modal -->
     <!-- /.content-wrapper -->
     <footer class="main-footer" id="footerkonten">
-    
+
     </footer>
 
     <!-- Control Sidebar -->
