@@ -10,6 +10,7 @@ function checkSession(){
     console.log(storedSession);
   }
 }
+
 function footer() {
   let ee = `
 <div>
@@ -24,38 +25,18 @@ function href() {
   document.location.href("/");
 }
 
-function sidebar(index) {
-  if (page == "daftaruser.html") {
-    active1 = ``;
-    active2 = `active`;
-    active4 = ``;
+function sidebar() {
+  let active1 = '',active2 = '',active4 = '',active7 = '',active8 = ``;
 
-    active7 = ``;
-    active8 = ``;
+  if (page == "daftaruser.html") {
+    active2 = `active`;
   } else if (page == "index.html") {
     active1 = `active`;
-    active2 = ``;
-    active4 = ``;
-
-    active7 = ``;
-    active8 = ``;
   } else if (page == "daftarbuku.html") {
-    active1 = ``;
-    active2 = ``;
     active4 = `active`;
-    active7 = ``;
-    active8 = ``;
   } else if (page == "daftarpinjaman.html") {
-    active1 = ``;
-    active2 = ``;
-    active4 = ``;
     active7 = `active`;
-    active8 = ``;
   } else if (page == "profil.html") {
-    active1 = ``;
-    active2 = ``;
-    active4 = ``;
-    active7 = ``;
     active8 = `active`;
   }
 

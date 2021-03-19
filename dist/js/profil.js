@@ -33,21 +33,17 @@ function formValidationForEditProfil() {
         tanggalLahirChecker(tanggal) === true &&
         addressChecker(alamat) === true &&
         telpChecker(telp) === true) {
-        Swal.fire({
-                icon: 'success',
-                title: 'SUKSES!!!',
-                text: 'Data berhasil diubah ...'
-            })
+            Swal.fire(
+                "Success",
+                "Berhasil Mengubah Data",
+                "success"
+              )
             .then(() => {
                 window.location = '../admin/profil.html';
             });
         form.reset();
     } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'GAGAL!!!',
-            text: 'Silahkan cek kembali kelengkapan formulir ...'
-        });
+        
     }
 }
 
@@ -71,15 +67,11 @@ function formValidationForChangePassword() {
                 text: 'Kata sandi berhasil diubah ...'
             })
             .then(() => {
-                window.location = '../peminjam/profil.html';
+                window.location = '../admin/profil.html';
             });
         form.reset();
     } else {
-        Swal.fire({
-            icon: 'error',
-            title: 'GAGAL!!!',
-            text: 'Silahkan cek kembali kelengkapan formulir ...'
-        });
+       
     }
 }
 
